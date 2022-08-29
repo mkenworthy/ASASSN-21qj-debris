@@ -8,3 +8,4 @@ dependencies:
   - astropy
   - pip:
       - matplotlib
+      - graphviz

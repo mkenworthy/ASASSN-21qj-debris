@@ -54,3 +54,5 @@ ax3.set_ylabel('Color (W1-W2)')
 plt.savefig(paths.figures / 'all_photometry.png',
     bbox_inches='tight',
     dpi=200)
+plt.draw()
+plt.show()
