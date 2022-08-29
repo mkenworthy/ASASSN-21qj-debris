@@ -59,8 +59,13 @@ dependencies:
 verbose:
   true
 dag:
-     render: true
-     engine: sfdp
-     graph_attr:
-       ranksep: "1"
-       nodesep: "0.65"
+  render: true
+  engine: sfdp
+  graph_attr:
+    ranksep: "1"
+    nodesep: "0.65"
+  group_by_type: true
+  node_attr:
+    shape: "box"
+    penwidth: "2"
+    width: "1"
