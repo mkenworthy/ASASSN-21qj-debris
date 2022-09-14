@@ -9,7 +9,7 @@ overleaf:
     - src/tex/bib.bib
 
 datasets:
-  10.5072/zenodo.1094565:
+  10.5072/zenodo.1104356:
     contents:
       aavsodata_62f60478b309b.txt: src/data/aavso/aavsodata_62f60478b309b.txt
       ASASSN-21qj_2013-2021.tbl: src/data/neowise/ASASSN-21qj_2013-2021.tbl
@@ -23,6 +23,7 @@ datasets:
       Bessel_V-1.txt: src/data/filter_curves/Bessel_V-1.txt
       Misc_Atlas.orange.dat: src/data/filter_curves/Misc_Atlas.orange.dat
       Bessel_I-1.txt: src/data/filter_curves/Bessel_I-1.txt
+      asassn-21qj_20220907_358_2SPOT.fits: 2spot/asassn-21qj_20220907_358_2SPOT.fits
 dependencies:
     src/scripts/plot_all_photometry.py:
         - src/data/obs_ATLAS.ecsv

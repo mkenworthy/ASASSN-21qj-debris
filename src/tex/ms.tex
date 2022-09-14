@@ -83,6 +83,18 @@
           \and
           NEOWISE authorship list
           \inst{4}
+          \and
+          AAVSO observers
+          \and
+          St\'{e}phane Charbonnel
+          \and
+        Olivier Garde
+        \and
+        Pascal Le D\^{u}
+        \and
+        Lionel Mulato
+        \and
+        Thomas Petit
           }
 
    \institute{Leiden Observatory, University of Leiden,
@@ -93,8 +105,14 @@
     \and
     JPL
     \and
-    Caltech/IPAC, 1200 E California Blvd, Mail Code 100-22, Pasadena, CA 91125, USA}
-
+    Caltech/IPAC, 1200 E California Blvd, Mail Code 100-22, Pasadena, CA 91125, USA
+    \and
+    NEOWISE
+    \and
+    AAVSO people
+    \and
+    XXXX
+}
    \date{Received XXXX; accepted XXXX}
 
 % \abstract{}{}{}{}{} 
@@ -138,7 +156,7 @@ Models of these impacts and the subsequent evolution of the dust clouds have bee
    %
    The star has subsequently maintained rapidly fluctuating photometry through to August 2022 \citep{RizzoSmith22} and has been monitored intensively by the AAVSO observers and the LCOGT network of telescopes.
    %
-   It had previously shown no significant stellar variation in the optical bands for 9600 days as reported in \citet{RizzoSmith21}.
+   It had previously shown no significant stellar variation in the optical bands for 2300 days as reported in \citet{RizzoSmith21}.
    %
    Searches through other photometric archives showed no other significant changes in the optical bands before this epoch.
    %
@@ -308,6 +326,9 @@ An overview of all the photometry is presented in Figure~\ref{fig:allphot}.
 The beginning of the eclipse was identified in \citet{RizzoSmith21} through the ASAS-SN survey.
 %
 
+\subsection{ROAD Photometry}
+
+
 \subsection{NEOWISE photometry}
 
 The NEOWISE photometry is presented with the ASASSN $q$ light curve in Figure~\ref{fig:wisephot}.
@@ -352,6 +373,41 @@ Photometry with large errors was rejected in a first pass.
 The remaining observations during a night were averaged and an error based on the r.m.s. of these nightly points was calaulated.
 %
 The photometry covers the time period where the collision event occurred. 
+
+\subsection{2SPOT spectroscopy}
+
+For the observations and setup : 
+Ritchey-Chretien telescope of 12 inch in diameter (305mm) open at $f/5$ (with focal reducer CCD 67 astrophysics).
+%
+Equatorial mount GM 3000 HPS from 10 micron (https://www.10micron.com/en/product/gm3000-hps/)
+
+The spectrograph is a Spectrograph Alpy 600 $R=570$ with a $23\mu m$ wide slit (https://www.shelyak.com/produit/alpy-600/?lang=en) and an ATIK 414ex camera. (https://www.atik-cameras.com/product/atik-414ex/)
+
+The observation site is in Chile at Deep Sky Chile (https://www.deepskychile.com/en/) 
+
+Lon : 70°W 51’ 11,86’'
+Lat : 30°S 31’ 34,71 »
+Alt : 1700m AMSL
+
+For this spectrum : 3 exposures of 1200s each in bin 1x1 taken in automatic mode with Prism V11 Software (https://www.prism-astro.com/) , spectrum process with ISIS software (http://www.astrosurf.com/buil/isis-software.html)
+Date : 07/09/2022 at 8h34’52’ UTC (middle time exposure) JJ Date : 2459829,8785
+
+And for more informations about 2SPOT, you wil find many informations in our website : https://2spot.org/EN/
+and also information about the team : https://2spot.org/EN/equipe.php
+
+
+\begin{figure*}
+   \begin{centering}
+   \includegraphics[width=\textwidth]{figures/2spot_spectrum.pdf}
+      \caption{2plot spectrum showing features of a G type star.
+      %
+              }
+              \label{fig:2spotspectrum}
+              \script{plot_2spot_spectrum.py}
+              \end{centering}
+       \end{figure*}
+
+
 
 
 \section{Analysis}\label{sec:dustcloud}
