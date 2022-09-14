@@ -56,6 +56,8 @@ dependencies:
         - src/data/neowise/ASASSN-21qj_2013-2021.tbl
     src/scripts/convert_aavso.py:
         - arc/data/aavso/aavsodata_62f60478b309b.txt
+    src/scripts/plot_2spot_spectrum.py:
+        - src/data/2spot/asassn-21qj_20220907_358_2SPOT.fits
 
 verbose:
   true
