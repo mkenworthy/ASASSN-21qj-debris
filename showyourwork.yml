@@ -23,7 +23,7 @@ datasets:
       Bessel_V-1.txt: src/data/filter_curves/Bessel_V-1.txt
       Misc_Atlas.orange.dat: src/data/filter_curves/Misc_Atlas.orange.dat
       Bessel_I-1.txt: src/data/filter_curves/Bessel_I-1.txt
-      asassn-21qj_20220907_358_2SPOT.fits: 2spot/asassn-21qj_20220907_358_2SPOT.fits
+      asassn-21qj_20220907_358_2SPOT.fits: src/data/2spot/asassn-21qj_20220907_358_2SPOT.fits
 dependencies:
     src/scripts/plot_all_photometry.py:
         - src/data/obs_ATLAS.ecsv
