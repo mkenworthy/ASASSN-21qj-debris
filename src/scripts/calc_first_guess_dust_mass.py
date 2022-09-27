@@ -4,7 +4,7 @@ from astropy import units as u
 
 from asassn21qj import *
 
-v_tran = 2.4 * u.km / u.s
+v_tran = 5.0 * u.km / u.s
 t_eclipse = 400 * u.day
 
 total_strip = (v_tran * t_eclipse * 2 * star_rad).to((u.cm*u.cm))
@@ -23,3 +23,4 @@ total_mass = (rho_dust * total_strip * mass_dust / area_dust).to(u.gram)
 
 
 print(f'total mass of strip is {total_mass.to(u.Mearth)}')
+print(f'total mass of strip is {total_mass.to(u.gram)}')

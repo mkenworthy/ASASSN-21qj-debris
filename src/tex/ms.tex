@@ -336,17 +336,33 @@ The beginning of the eclipse was identified in \citet{RizzoSmith21} through the 
 The NEOWISE photometry is presented with the ASASSN $q$ light curve in Figure~\ref{fig:wisephot}.
 
 \begin{figure*}
-   \begin{centering}
-   \includegraphics[width=\textwidth]{figures/all_photometry.png}
-      \caption{NEOWISE $W1$ and $W2$ photometry of the star, with the WISE color in the lowest panel.
-      %
-      The $NEOWISE$ color changes from colourless to very red, which fades back towards colourless over $\sim 500$ days.
-              }
-              \label{fig:wisephot}
-              \script{plot_all_photometry.py}
-              \end{centering}
-       \end{figure*}
+\begin{centering}
+\includegraphics[width=\textwidth]{figures/all_photometry.png}
+\caption{NEOWISE $W1$ and $W2$ photometry of the star, with the WISE color in the lowest panel.
+%
+The $NEOWISE$ color changes from colourless to very red, which fades back towards colourless over $\sim 500$ days.
+}
+\label{fig:wisephot}
+\script{plot_all_photometry.py}
+\end{centering}
+\end{figure*}
 
+
+\begin{figure*}
+\begin{centering}
+\includegraphics[width=\textwidth]{figures/stellar_lomb_scargle.pdf}
+\caption{ASASSN photometry of ASASSN-21qj and the Lomb Scargle periodograms of the photometry in and out of the eclipse.
+%
+The blue and orange shaded regions in the top panel indicate the range of epochs put into the Lomb Scargle periodogram.
+%
+Middle panel: The periodograms over a range of 0 to 150 days.
+%
+Lower panel: The periodogram of the star outside of the eclipse over a range of 0 to 50 days.
+}
+\label{fig:starlombscargle}
+\script{calc_stellar_lomb_scargle.py}
+\end{centering}
+\end{figure*}
 
 
 
