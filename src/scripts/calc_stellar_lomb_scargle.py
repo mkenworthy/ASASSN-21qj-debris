@@ -9,8 +9,8 @@ import paths
 import matplotlib as mpl
 mpl.rcParams.update({'font.size': 14})
 
-twi = ascii.read(paths.data / 'obs_NEOWISE.ecsv')
-tat = ascii.read(paths.data / 'obs_ATLAS.ecsv')
+#twi = ascii.read(paths.data / 'obs_NEOWISE.ecsv')
+#tat = ascii.read(paths.data / 'obs_ATLAS.ecsv')
 tas = ascii.read(paths.data / 'obs_ASASSN.ecsv')
 
 tasg = tas[tas['Filter']=='g']
