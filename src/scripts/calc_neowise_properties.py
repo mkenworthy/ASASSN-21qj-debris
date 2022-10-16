@@ -16,6 +16,7 @@ t_after = np.min(twi['MJD'][~m_before])
 date_before = Time(t_before, format='mjd')
 date_after = Time(t_after, format='mjd')
 
+t_dur = t_before - t_after
 date_bef = date_before.to_value(format='iso', subfmt='date')
 date_aft = date_after.to_value(format='iso', subfmt='date')
 
@@ -25,3 +26,10 @@ with open(paths.output / 'collision_epoch_text.txt', 'w') as f:
 
 with open(paths.output / 'collision_epochs.txt', 'w') as f:
     f.write(f'{t_before:5.2f} {t_after:5.2f}')
+
+with open(paths.output / 't_before.txt', 'w') as f:
+    f.write(f'{t_before:5.2f}')
+with open(paths.output / 't_after.txt', 'w') as f:
+    f.write(f'{t_after:5.2f}')
+with open(paths.output / 't_duration.txt', 'w') as f:
+    f.write(f'{t_dur:5.1f}')
