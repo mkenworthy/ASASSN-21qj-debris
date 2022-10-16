@@ -38,8 +38,7 @@ rule calc_epochs_of_collision:
     input:
         "src/data/obs_NEOWISE.ecsv"
     output:
-        "src/tex/output/collision_epoch_text.txt"
-        "src/tex/output/t_duration.txt"
+        "src/tex/output/collision_epoch_text.txt" "src/tex/output/t_duration.txt"
     conda:
         "environment.yml"
     script:
