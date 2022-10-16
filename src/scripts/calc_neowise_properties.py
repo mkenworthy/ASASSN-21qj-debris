@@ -16,7 +16,7 @@ t_after = np.min(twi['MJD'][~m_before])
 date_before = Time(t_before, format='mjd')
 date_after = Time(t_after, format='mjd')
 
-t_dur = t_before - t_after
+t_dur = t_after - t_before
 date_bef = date_before.to_value(format='iso', subfmt='date')
 date_aft = date_after.to_value(format='iso', subfmt='date')
 
