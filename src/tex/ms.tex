@@ -103,7 +103,7 @@
    PO Box 9513, 2300 RA Leiden, The Netherlands\\
    \email{kenworthy@strw.leidenuniv.nl}
          \and
-             Arttu's address ...\\
+             Arttu's address\\
     \and
     JPL
     \and
@@ -329,8 +329,47 @@ An overview of all the photometry is presented in Figure~\ref{fig:allphot}.
 
 The beginning of the eclipse was identified in \citet{RizzoSmith21} through the ASAS-SN survey.
 %
+\subsection{ASAS}
+
+The All Sky Automated Survey \citep[ASAS; ][]{pojmanski_all_1997, asas_2005, asas_2018} is a survey consisting of two observing stations - one in Las Campanas, Chile and the other on Maui, Hawaii. 
+%
+Each observatory is equipped with two CCD cameras using V and I filters and commercial f $ = 200$ mm, D $= 100$ mm lenses, although both larger (D $= 250$ mm) and smaller (50-72 mm) lenses were used at earlier times.
+%
+The majority of the data are taken with a pixel scale of $\approx$ 15\arcsec{}.
+%
+ASAS splits the sky into 709 partially overlapping (9\degr{} $\times$ 9\degr{} fields, taking on average 150 3-minute exposures per night, leading to a variable cadence of 0.3-2 frames per night.
+%
+Depending on the equipment used and the mode of operation, the ASAS limiting magnitude varied between 13.5 and 15.5 mag in V, and the saturation limit was 5.5 to 7.5 mag. 
+%
+Precision is around 0.01-0.02 mag for bright stars and below 0.3 mag for the fainter ones. 
+%
+ASAS photometry is calibrated against the Tycho catalog, and its accuracy is limited to 0.05 mag for bright, non-blended stars.
+
+\subsection{ASAS-SN}
+
+The All Sky Automated Survey for Supernovae \citep[ASAS-SN; ][]{shappee_man_2014,kochanek_all-sky_2017} consists of six stations around the globe, with each station hosting four telescopes with a shared mount.
+%
+The telescopes consist of a 14-cm aperture telephoto lens with a field of view of approximately 4.5\degr{}$\times$4.5\degr{} and an 8.0\arcsec{} pixel scale.
+% 
+Two of the original stations (one in Hawaii and one in Chile) are fitted with $V$ band filters, whereas the other stations (Chile, Texas, South Africa and China) are fitted with $g$ band filters.
+%
+ASAS-SN observes the whole sky every night with a limiting magnitude of about 17 mag in the $V$ and $g$ bands.
+%
+
+\subsection{TESS}
+
+The Transiting Exoplanet Survey Satellite \citep[TESS; ][]{2015JATIS...1a4003R} is a satellite designed to survey for transiting exoplanets among the brightest and nearest stars over most of the sky.
+%
+The TESS satellite orbits the Earth every 13.7 days on a highly elliptical orbit, scanning a sector of the sky spanning 24\degr $\times$ 96\degr\ for a total of two orbits, before moving on to the next sector. 
+%
+It captures images at a 2 second (used for guiding), 20 seconds (for 1 000 bright asteroseismology targets), 120 seconds (for 200 000 stars that are likely planet hosts) and 30 minutes (full frame image) cadences.
+%
+The instrument consists of 4 CCDs each with a field of view of 24\degr$\times$24\degr, with a wide band-pass filter from 600-1000 nm (similar to the $I_C$ band) and has a limiting magnitude of about 14-15 mag ($I_C$).
+%
+The data was extracted from the TESS archive using the {\tt eleanor} package \citep{Feinstein19} which corrected for known systematics in the cameras and telescope.
 
 \subsection{ROAD Photometry}
+
 
 
 \subsection{NEOWISE photometry}
@@ -456,7 +495,54 @@ and also information about the team : https://2spot.org/EN/equipe.php
 
 \section{Discussion}\label{sec:discussion}
 
-Hansen collision of terrestrial planet with scattered moon Hansen 2022. https://arxiv.org/abs/2210.02603
+We have two separate phenomena that occur within 1000 days of each other.
+%
+Firstly, NEOWISE W1 and W2 photometry towards the star shows an increase in flux of a factor of two in both wavebands, with the longer wavelength showing a larger increase.
+%
+Observations from the optical bands have a much higher cadence, but do not show any corresponding increase in flux.
+%
+This infrared only increase is consistent with a dust generating event, such as the collision of a planetoid with another planetoid or a terrestrial planet (REF REF).
+%
+The resultant dust cloud has a considerably larger surface area than the progenitors, and this dust cloud is then heated by the flux of the star and rapidly reaches thermal equilibrium.
+%
+The temperature of the dust cloud can be estimated from spectral energy distribution measured towards the stellar system.
+
+About 1000 days after the IR flux increase, the stellar flux begins to decrease.
+%
+The absorption is larger at bluer wavelengths and is consistent with sub-micron sized dust absorption (REF REF).
+
+\subsection{Infrared increase}
+
+This increase occurred between MJD \variable{output/t_before.txt} and MJD \variable{output/t_after.txt} dates, a period of approximately \variable{output/t_duration.txt} days.
+%
+Subsequent NEOWISE measurements show an approximately constant excess flux for XXXX days, followed by a decrease from XXXX to XXX.
+
+We fit a blackbody SED to the excess flux in the two NEOWISE bands for each of the epochs.
+%
+Assuming grey emission (where $\upsilon(\lambda)\approx \upsilon$) we obtain an effective temperature of $_{IR} = 900\pm XXX$K, and $F_{IR}/F_{star}=0.03$.
+%
+The sudden onset of the IR flux within 155.21 days followed by a constant level of flux implies that the dust cloud is optically thin by the time of the first measurement, and therefore has had to expand such that 0.03 of the solid angle around the star was subtended by dust and reradiated in the IR.
+%
+An extimate for the surface area $A_{IR}$ of the dust can be estimated from $A_{IR}/(4\pi r_{IR}^2) = 0.03$ which leads to:
+
+$$$A_{IR}=0.38 a_{IR}^2$$ 
+
+where $a_{IR}$ is the distance of the dust from the star.
+
+If we assume that the dust cloud expanded from a point source out into a star-facing circular optically thin disk with area $A_{IR}$ and radius $r_{IR}$ in a time $t_{IR}$ (where this time has an upper limit of 6 months corresponding to the duration between the NEOWISE epochs), then we can estimate a linear velocity $v_{IR} t_{IR} = r_{IR}$ for the expansion of the cloud of:
+
+$$v_{IR} = \frac{r_{IR}}{t_{IR}} = \frac{0.35 a_{IR}}{t_{IR}} = $$
+%# A_{IR} / 4 pi (a_{IR})2 =  pi r_{IR}^2 / 4 pi a2 = 0.03
+% r2 / (4a2) = 0.03
+% $r_{IR} = 2a_{IR} sqrt(0.03)$
+
+
+
+
+
+\subsection{Optical absorption}
+
+Hansen collision of terrestrial planet with scattered moon \citep{2022MNRAS.tmp.2636H}
 
 Cound be a ring system
 
@@ -464,21 +550,68 @@ Could be a planetessimal system evolving
 
 Alternatives?
 
-\textcolor{magenta}{Probing disintegrating planetary material has been proven to be a very useful method to access the composition of building blocks of planets outside of the Solar System. E.g. the disintegration of a gas giant around a white dwarf was used to infer its composition \citep{Gaensike2019}. White dwarf star pollution has also yielded insights about refractory (Fe/Mg/Ca) element content of rocky  material around such stars \citep{Turner2020,Putirka2021,Blouin2020}. See also \cite{Veras2021} for a review.}
+\textcolor{magenta}{Probing disintegrating planetary material has been proven to be a very useful method to access the composition of building blocks of planets outside of the Solar System.
+%
+E.g. the disintegration of a gas giant around a white dwarf was used to infer its composition \citep{Gaensike2019}.
+%
+White dwarf star pollution has also yielded insights about refractory (Fe/Mg/Ca) element content of rocky  material around such stars \citep{Turner2020,Putirka2021,Blouin2020}.
+%
+See also \cite{Veras2021} for a review.}
 
-\textcolor{magenta}{Planets and asteroids falling into white dwarfs, however, haven been probably heavily processed during the late stellar evolution. The unusually warm (how much?) debris disk passing in front of a young star presented in this work, on the other hand, may allow to probe the interior of planetisimals in the early stages of planet formation. The eclipse is expected to last for xxx days, allowing to perform further spectroscopic analysis of the dust in this system.}
+\textcolor{magenta}{Planets and asteroids falling into white dwarfs, however, haven been probably heavily processed during the late stellar evolution.
+%
+The unusually warm (how much?) debris disk passing in front of a young star presented in this work, on the other hand, may allow to probe the interior of planetesimals in the early stages of planet formation.
+%
+The eclipse is expected to last for xxx days, allowing to perform further spectroscopic analysis of the dust in this system.}
 
 %------------------------
 \section{Conclusions}\label{sec:conclusion}
 
    \begin{enumerate}
       \item There was a collision between planetoids towards ASASSN-21qj which generated a debris cloud.
+      %
       \item The cloud moved in front of the star, and we have a fresh measure of the debris from a collision.
-     \item \textcolor{magenta}{Probing dust of material in the early stages of planet formation is complementary to studies of white dwarf polluters. The latter represent planetary material after the end of the main sequence of the host star. }
+      %
+     \item \textcolor{magenta}{Probing dust of material in the early stages of planet formation is complementary to studies of white dwarf polluters.
+    %
+    The latter represent planetary material after the end of the main sequence of the host star. }
    \end{enumerate}
 
 \begin{acknowledgements}
-Thank matplotlib
+
+This research has used the SIMBAD database, operated at CDS, Strasbourg, France \citep{wenger2000}.
+%
+This work has used data from the European Space Agency (ESA) mission {\it Gaia} (\url{https://www.cosmos.esa.int/gaia}), processed by the {\it Gaia} Data Processing and Analysis Consortium (DPAC, \url{https://www.cosmos.esa.int/web/gaia/dpac/consortium}).
+%
+Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the {\it Gaia} Multilateral Agreement.
+%
+To achieve the scientific results presented in this article we made use of the \emph{Python} programming language\footnote{Python Software Foundation, \url{https://www.python.org/}}, especially the \emph{SciPy} \citep{virtanen2020}, \emph{NumPy} \citep{numpy}, \emph{Matplotlib} \citep{Matplotlib}, \emph{emcee} \citep{foreman-mackey2013}, and \emph{astropy} \citep{astropy_1,astropy_2} packages.
+%
+We acknowledge with thanks the variable star observations from the AAVSO International Database contributed by observers worldwide and used in this research.
+%
+We thank the Las Cumbres Observatory and its staff for its continuing support of the ASAS-SN project, and the Ohio State University College of Arts and Sciences Technology Services for helping us set up and maintain the ASAS-SN variable stars and photometry databases.
+%
+ASAS-SN is supported by the Gordon and Betty Moore Foundation through grant GBMF5490 to the Ohio State University and NSF grant AST-1515927.
+%
+Development of ASAS-SN has been supported by NSF grant AST-0908816, the Mt. Cuba Astronomical Foundation, the Center for Cosmology and AstroParticle Physics at the Ohio State University, the Chinese Academy of Sciences South America Center for Astronomy (CASSACA), the Villum Foundation, and George Skestos.
+%
+Early work on KELT-North was supported by NASA Grant NNG04GO70G.
+%
+Work on KELT-North was partially supported by NSF CAREER Grant AST-1056524 to S. Gaudi.
+%
+Work on KELT-North received support from the Vanderbilt Office of the Provost through the Vanderbilt Initiative in Data-intensive Astrophysics.
+%
+Part of this research was carried out in part at the Jet Propulsion Laboratory, California Institute of Technology, under a contract with the National Aeronautics and Space Administration (80NM0018D0004).
+%
+This publication makes use of VOSA, developed under the Spanish Virtual Observatory project supported by the Spanish MINECO through grant AyA2017-84089.
+%
+This work has made use of data from the Asteroid Terrestrial-impact Last Alert System (ATLAS) project.
+%
+The Asteroid Terrestrial-impact Last Alert System (ATLAS) project is primarily funded to search for near earth asteroids through NASA grants NN12AR55G, 80NSSC18K0284, and 80NSSC18K1575; byproducts of the NEO search include images and catalogs from the survey area.
+%
+This work was partially funded by Kepler/K2 grant J1944/80NSSC19K0112 and HST GO-15889, and STFC grants ST/T000198/1 and ST/S006109/1.
+%
+The ATLAS science products have been made possible through the contributions of the University of Hawaii Institute for Astronomy, the Queen’s University Belfast, the Space Telescope Science Institute, the South African Astronomical Observatory, and The Millennium Institute of Astrophysics (MAS), Chile.
 
 \end{acknowledgements}
 
