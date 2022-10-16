@@ -16,7 +16,6 @@ rule proc_asassn:
         "environment.yml"
      script:
         "src/scripts/convert_asassn.py"
-
 rule proc_neowise:
      input:
         "src/data/neowise/ASASSN-21qj_2013-2021.tbl"
@@ -26,7 +25,6 @@ rule proc_neowise:
         "environment.yml"
      script:
         "src/scripts/convert_neowise.py"
-
 rule proc_aavso:
      input:
         "src/data/aavso/aavsodata_62f60478b309b.txt"
@@ -36,13 +34,12 @@ rule proc_aavso:
         "environment.yml"
      script:
         "src/scripts/convert_aavso.py"
-
 rule calc_epochs_of_collision:
     input:
         "src/data/obs_NEOWISE.ecsv"
     output:
         "src/tex/output/collision_epoch_text.txt"
-     conda:
+    conda:
         "environment.yml"
     script:
         "src/scripts/calc_neowise_properties.py"
