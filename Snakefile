@@ -52,3 +52,21 @@ rule calc_epochs_of_collision2:
         "environment.yml"
     script:
         "src/scripts/calc_neowise_properties.py"
+rule calc_epochs_of_collision3:
+    input:
+        "src/data/obs_NEOWISE.ecsv"
+    output:
+        "src/tex/output/t_after.txt"
+    conda:
+        "environment.yml"
+    script:
+        "src/scripts/calc_neowise_properties.py"
+rule calc_epochs_of_collision4:
+    input:
+        "src/data/obs_NEOWISE.ecsv"
+    output:
+        "src/tex/output/t_before.txt"
+    conda:
+        "environment.yml"
+    script:
+        "src/scripts/calc_neowise_properties.py"
