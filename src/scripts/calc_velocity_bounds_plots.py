@@ -25,6 +25,9 @@ AB=0.1
 x = star_lum*(1-AB)/(16*c.sigma_sb*np.pi*a*a)
 Teq = np.power(x,1./4).to(u.K)
 
+gravpot = c.G*1.0*u.Mearth*1.0*u.Mearth/(1.0*u.Rearth)
+print(f'Grav potential of 2 x 1Me masses is {gravpot.to(u.J):.1e}')
+print(f'assuming {f_IR} fractional luminosity of star this results in a glow for {(gravpot/(f_IR*star_lum)).to(u.yr):5.3f}')
 ax2.loglog(a.to(u.au),Teq)
 plt.draw()
 plt.show()
