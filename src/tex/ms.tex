@@ -24,6 +24,7 @@
 
 \usepackage{xspace}
 
+\newcommand{\asas}{ASASSN-21qj}
 \newcommand{\ktwo}{\textit{K2}}
 \newcommand{\kms}{km~s$^{-1}$\xspace}
 \newcommand{\ms}{m~s$^{-1}$}
@@ -79,6 +80,9 @@
           Joeseph (Davy) Kirkpatrick
           \inst{4}
           \and 
+          Richelle F. van Capelleveen
+          \inst{1}
+          \and
           Grant M. Kennedy
           \and
           Ludmila Carone
@@ -125,7 +129,7 @@
   % {} leave it empty if necessary  
    {Collisions occur between planetessimals that generate debris disks through collisional cascades.}
   % aims heading (mandatory)
-   {We analyze the dust and size distribution of the eclipse seen towards ASASSN-21qj.}
+   {We analyze the dust and size distribution of the eclipse seen towards \asas.}
   % methods heading (mandatory)
    {Fit the light curve from three different colours to determine the particle size and distribution.}
   % results heading (mandatory)
@@ -152,44 +156,46 @@ The Earth's moon is believed to have formed from the resulting aftermath of a co
 %
 Sudden increases of infrared flux from systems known to host debris disks indicate that this is a stochastic process that can occur on timescales of a few months or less.
 %
-Models of these impacts and the subsequent evolution of the dust clouds have been modeled \citep{Jackson12,Jackson14} and have been seen ar IR wavelengths \citep{Su19,Su22}
+Models of these impacts and the subsequent evolution of the dust clouds have been modeled \citep{Jackson12,Jackson14} and have been seen ar IR wavelengths \citep{Su19,Su22}.
 
-   The star (Gaia EDR3 source 5539970601632026752 at RA=08:15:23.2996, DEC=-38:59:23.304, $d\sim 556$ pc, G=13.4 mag, BP-RP=0.8 mag) underwent a sudden dimming event in December 2021, which was announced by \citet{RizzoSmith21} and assigned the identifier ASASSN-21qj.
-   %
-   The star has subsequently maintained rapidly fluctuating photometry through to August 2022 \citep{RizzoSmith22} and has been monitored intensively by the AAVSO observers and the LCOGT network of telescopes.
-   %
-   It had previously shown no significant stellar variation in the optical bands for 2300 days as reported in \citet{RizzoSmith21}.
-   %
-   Searches through other photometric archives showed no other significant changes in the optical bands before this epoch.
-   %
-   The wide field infrared satellite WISE has photometric imaging from 3.8 microns (band W1) through to 25 microns (band W4), and the NEOWISE survey has photometry for bands W1 and W2 for this star.
-   %
-   This star showed a significant brightening of 0.7 magnitudes in W1 and 0.8 magnitudes in W2 between two observing epochs (65000 MJD and 65120 MJD), and the IR color of the star had changed from W1-W2=0.0 to 1.2, but no significant changes in flux in the optical bands were seen during this time.
-   %
-   Some 900 days later, the dimming was seen in the optical, and the absorption is larger at shorter optical wavelengths.
-   %
-   These observations are all consistent with an event that generated a significant amount of sub-micron dust which subsequently started to transit the stellar disk.
+The star 2MASS J08152329-3859234 underwent a sudden dimming event in December 2021, which was announced by \citet{RizzoSmith21} and assigned the identifier \asas, which we will subsequently use for the rest of this paper.
+%
+The star has undergone rapidly fluctuating photometry through to August 2022 \citep{RizzoSmith22} and has been monitored intensively by the AAVSO observers and the LCOGT network of telescopes.
+%
+It had previously shown no significant stellar variation in the optical bands for 2300 days as reported in \citet{RizzoSmith21}.
+%
+Searches through other photometric archives showed no other significant changes in the optical bands before this epoch.
+%
+The wide field infrared satellite WISE has photometric imaging from 3.8 microns (band W1) through to 22 microns (band W4), and the NEOWISE survey has photometry for bands W1 and W2 for this star.
+%
+This star showed a significant brightening of 0.7 magnitudes in W1 and 0.8 magnitudes in W2 between two observing epochs (65000 MJD and 65120 MJD), and the IR color of the star had changed from W1-W2=0.0 to 1.2, but no significant changes in flux in the optical bands were seen during this time.
+%
+Some 900 days later, the dimming was seen in the optical, and the absorption is larger at shorter optical wavelengths.
+%
+These observations are all consistent with an event that generated a significant amount of sub-micron dust which subsequently started to transit the stellar disk.
 
-   We hypothesise that there was a collision between one or more rocky bodies in the system which generated a significant amount of dust, which has then subsequently begun to transit the star.
-   %
-   This is consistent with a late type impact between a planet and large asteroid, similar to the one that generated the Earth/Moon system.
+We hypothesise that there was a collision between one or more rocky bodies in the system which generated a significant amount of dust, which has then subsequently begun to transit the star.
+%
+This is consistent with a late type impact between a planet and large asteroid, similar to the one that generated the Earth/Moon system.
 
-   The structure of our paper is as follows: the analysis of the star is given in Section~\ref{sec:star}, the observations are detailed in Section~\ref{sec:obs}, and we make an estimate of the physical parameters of the hypothesised dust cloud in Section~\ref{sec:dustcloud}.
-   %
-   We then place this model in the context of planet formation in Section~\ref{sec:discussion} and summarise the paper in Section~\ref{sec:conclusion}.
+The structure of our paper is as follows: the analysis of the star is given in Section~\ref{sec:star}, the observations are detailed in Section~\ref{sec:obs}, and we make an estimate of the physical parameters of the hypothesised dust cloud in Section~\ref{sec:dustcloud}.
+%
+We then place this model in the context of planet formation in Section~\ref{sec:discussion} and summarise the paper in Section~\ref{sec:conclusion}.
 
 
-Statistical distributions of ejecta masses from collision in \citet{Crespi21}.
+%%%Statistical distributions of ejecta masses from collision in \citet{Crespi21}.
 
-Planetary embryo collisions and wiggly disks.... \citet{Watt21}.
+%%%%Planetary embryo collisions and wiggly disks.... \citet{Watt21}.
 
 \section{Properties of the star}\label{sec:star}
 
-The properties of ASASSN-21qj (Gaia EDR3 source 5539970601632026752) are listed in Table~\ref{tab:Stellarprop}.
+The properties of \asas\ (Gaia EDR3 source 5539970601632026752) are listed in Table~\ref{tab:Stellarprop}.
+%
+Photometry from various sources was compiled and analysed using the Virtual Observatory SED Analyzer \citep[VOSA; ][]{Bayo08} and the results are listed in Table~\ref{tab:Stellarprop}, showing that \asas\ is consistent with being a G2 type dwarf star.
 
 \begin{table}
     \centering
-    \caption{ Properties of ASASSN-21qj}
+    \caption{Properties of \asas}
     \begin{tabular}{@{}lcc@{}}
     \hline\hline
 Property                               & Value                     & Ref.  \\
@@ -250,39 +256,32 @@ Property                               & Value                     & Ref.  \\
 %[M/H] = 0.0+-0.23 
 %Rad = 1.009 +- 0.030 Rsun
 
-Test
-
-
-\begin{figure}
-   \centering
-   \includegraphics[width=\hsize]{figures/asassn-21qj-gmk-sed-fit.png}
-      \caption{VOSA fit to photometry of ASAS-SN J0815 by gmk}
-         \label{fig:sed}
-\end{figure}
+% This SED is not from VOSA, would need one from there to match Eric's fit
+% \begin{figure}
+%    \centering
+%    \includegraphics[width=\hsize]{figures/asassn-21qj-gmk-sed-fit.png}
+%       \caption{VOSA fit to photometry of \asas .}
+%          \label{fig:sed}
+% \end{figure}
 
 
 \begin{figure}
    \begin{centering}
    \includegraphics[width=\hsize]{figures/filter_curves.pdf}
-      \caption{Filter curves for all telescopes and filters used to observe ASASSN-21qj.}
+      \caption{Filter curves for all telescopes and filters used to observe \asas.}
       \label{fig:allfilters}
       \script{plot_filter_curves.py}
       \end{centering}
 \end{figure}
 
-
-
-\begin{figure}
-   \begin{centering}
-   \includegraphics[width=\hsize]{figures/mie_single.pdf}
-      \caption{Mie test.}
-      \label{fig:mietest}
-      \script{plot_mie_single.py}
-      \end{centering}
-\end{figure}
-
-
-
+%\begin{figure}
+%   \begin{centering}
+%   \includegraphics[width=\hsize]{figures/mie_single.pdf}
+%      \caption{Mie test.}
+%      \label{fig:mietest}
+%      \script{plot_mie_single.py}
+%      \end{centering}
+%\end{figure}
 
 \begin{figure*}
    \begin{centering}
@@ -298,37 +297,31 @@ Each light curve is offset vertically by 0.8.
     \end{centering}
 \end{figure*}
 
+\subsection{Possible multiplicity of \asas}
 
-
-\subsection{Possible multiplicity in the  system}
-
-ASASSN-21qj (Gaia DR3 5539970601632026752 = 2MASS J08152329-3859234) has a neighbor (Gaia DR3 5539970597334497024= 2MASS J08152298-3859244) a few arcseconds away for which we checked to see if it could plausibly be a physical companion.
+\asas\ (Gaia DR3 5539970601632026752 = 2MASS~J08152329-3859234) has a neighbor (Gaia DR3 5539970597334497024 = 2MASS~J08152298-3859244) which might plausibly be a physical companion.
 %
 Based on the Gaia EDR3 mean ICRS position for epoch 2016.0, the visual companion lies at a separation $\rho$ = $3738.243\pm0.062$ mas and at position angle $\theta$ = $249^{\circ}.977$.
 %
 Their parallaxes ($\varpi$ = $1.7631\pm0.0112$ mas vs. $1.4711\pm0.0523$ mas) differ by 5.5$\sigma$ and proper motions ($\mu_{\alpha} = -9.692\pm0.012$, $\mu_{\delta} = 7.349\pm0.012$ \masyr\, vs. $\mu_{\alpha} = -0.114\pm0.055$, $\mu_{\delta} = 6.419\pm0.053$ \masyr) differ by a factor of 2.
 %
-If the two stars are at the parallactic distance of ASASSN-21qj
-\citep[$d$ = 552.4 pc;][]{BailerJones21}, then their difference in proper motion ($\Delta\mu$ = $9.623\pm0.056$ \masyr) translates to a difference in tangential velocity of $\Delta V_{tan}$ = $25.37\pm0.21$ \kms.
+If the two stars are at the parallactic distance of \asas\ \citep[$d$ = 552.4 pc;][]{BailerJones21}, then their difference in proper motion ($\Delta\mu$ = $9.623\pm0.056$ \masyr) translates to a difference in tangential velocity of $\Delta V_{tan}$ = $25.37\pm0.21$ \kms.
 %
 The velocity difference is considerable given the projected separation of 2079\,au.
 %
-Using Kepler's 3rd law, and assuming the observed separation corresponded
-to the semi-major axis, and the observed $\Delta V_{tan}$ corresponded to the full orbital velocity, these quantities would predict a minimum system mass of $>$1509 Msun.
+Using Kepler's 3rd law, and assuming the observed separation corresponds to the semi-major axis, and the observed $\Delta V_{tan}$ corresponded to the full orbital velocity, these quantities would predict a minimum system mass of $>150$ \msun.
 %
-Based on the implausible estimated dynamical mass inferred from the observed separation and difference in tangential velocities, we conclude that the visual companion Gaia DR3 5539970597334497024 (2MASS J08152298-3859244) is an interloper
-unrelated to ASASSN-21qj.
+Based on the implausible estimated dynamical mass inferred from the observed separation and difference in tangential velocities, we conclude that the visual companion 2MASS J08152298-3859244 is an interloper unrelated to \asas.
 
 \section{Observations}\label{sec:obs}
-An overview of all the photometry is presented in Figure~\ref{fig:allphot}.
 
-
-
-
-\subsection{ASAS-SN photometry}
-
-The beginning of the eclipse was identified in \citet{RizzoSmith21} through the ASAS-SN survey.
+The beginning of the eclipse was announced in \citet{RizzoSmith21} through the ASASSN survey, which triggered several observing campaigns at optical wavelengths, and an ALMA observation at Band 7 (program \texttt{2019.A.00040.S}).
 %
+An overview of all the photometry is presented in Figure~\ref{fig:allphot}, along with the filter passbands for all the observations in Figure~\ref{fig:allfilters}.
+%
+A spectrum of the star was obtained with the 2SPOT consortium midway through the eclipse.
+%
+
 \subsection{ASAS}
 
 The All Sky Automated Survey \citep[ASAS; ][]{pojmanski_all_1997, asas_2005, asas_2018} is a survey consisting of two observing stations - one in Las Campanas, Chile and the other on Maui, Hawaii. 
@@ -362,7 +355,7 @@ The Transiting Exoplanet Survey Satellite \citep[TESS; ][]{2015JATIS...1a4003R} 
 %
 The TESS satellite orbits the Earth every 13.7 days on a highly elliptical orbit, scanning a sector of the sky spanning 24\degr $\times$ 96\degr\ for a total of two orbits, before moving on to the next sector. 
 %
-It captures images at a 2 second (used for guiding), 20 seconds (for 1 000 bright asteroseismology targets), 120 seconds (for 200 000 stars that are likely planet hosts) and 30 minutes (full frame image) cadences.
+It captures images at a 2 second (used for guiding), 20 seconds (for 1000 bright asteroseismology targets), 120 seconds (for 200 000 stars that are likely planet hosts) and 30 minutes (full frame image) cadences.
 %
 The instrument consists of 4 CCDs each with a field of view of 24\degr$\times$24\degr, with a wide band-pass filter from 600-1000 nm (similar to the $I_C$ band) and has a limiting magnitude of about 14-15 mag ($I_C$).
 %
@@ -370,7 +363,11 @@ The data was extracted from the TESS archive using the {\tt eleanor} package \ci
 
 \subsection{ROAD Photometry}
 
-
+The Remote Observatory Atacama Desert \citep[ROAD; ][]{Hambsch12} is a fully automated telescope located in Chile that obtains nightly photometry in multiple bands for a wide range of astronomical projects.
+%
+It consists of a 40-cm $f/6.8$ Optimized Dall-Kirkham and uses a Finger Lakes Instruments camera with a 4k$\times$4k array with pixels of $5\mu m$ in size.
+%
+Data are reduced using a custom pipeline and then published on the AAVSO website.
 
 \subsection{NEOWISE photometry}
 
@@ -392,7 +389,7 @@ The $NEOWISE$ color changes from colourless to very red, which fades back toward
 \begin{figure*}
 \begin{centering}
 \includegraphics[width=\textwidth]{figures/stellar_lomb_scargle.pdf}
-\caption{ASASSN photometry of ASASSN-21qj and the Lomb Scargle periodograms of the photometry in and out of the eclipse.
+\caption{ASASSN photometry of \asas\ and the Lomb Scargle periodograms of the photometry in and out of the eclipse.
 %
 The blue and orange shaded regions in the top panel indicate the range of epochs put into the Lomb Scargle periodogram.
 %
@@ -416,10 +413,6 @@ NEOWISE....
 
 \subsection{ATLAS}
 
-ATLAS photometry was obtained from their database.
-
-
-
 ATLAS is a project that searches for near earth asteroids down to a magnitude of 19 
 \citep{Tonry18}.
 %
@@ -435,45 +428,44 @@ The photometry covers the time period where the collision event occurred.
 
 \subsection{2SPOT spectroscopy}
 
-For the observations and setup : 
-Ritchey-Chretien telescope of 12 inch in diameter (305mm) open at $f/5$ (with focal reducer CCD 67 astrophysics).
+A spectrum of the star was taken on 59829.8785 MJD equal to 2022-09-07 at 08:34:52 UTC from the Deep Sky Chile\footnote{\url{https://www.deepskychile.com/en/}} site in Chile (at longitude:70\degr 51\arcmin 11\farcs 86
+latitude:30\degr S 31\arcmin 34\farcs 71 altitude:1700m AMSL).
 %
-Equatorial mount GM 3000 HPS from 10 micron (https://www.10micron.com/en/product/gm3000-hps/)
+The telescope is a Ritchey-Chretien telescope ($d=305$mm) at $f/5$ (with focal reducer CCD 67 astrophysics) on an equatorial mount GM 3000 HPS from 10 micron\footnote{\url{https://www.10micron.com/en/product/gm3000-hps/}}.
+%
+The spectrograph is a Spectrograph Alpy 600 $R=570$ with a $23\mu m$ wide slit\footnote{\url{https://www.shelyak.com/produit/alpy-600/?lang=en}} and an ATIK 414ex camera\footnote{\url{https://www.atik-cameras.com/product/atik-414ex/}}.
+%
+The spectrum is composed of three unbinned exposures of 1200s each, taken in automatic mode with Prism V11 Software (https://www.prism-astro.com/) , spectrum process with ISIS software\footnote{\url{http://www.astrosurf.com/buil/isis-software.html}}.
+%
+The final spectrum is shown in Figure~\ref{fig:2spotspectrum}.
 
-The spectrograph is a Spectrograph Alpy 600 $R=570$ with a $23\mu m$ wide slit (https://www.shelyak.com/produit/alpy-600/?lang=en) and an ATIK 414ex camera. (https://www.atik-cameras.com/product/atik-414ex/)
-
-The observation site is in Chile at Deep Sky Chile (https://www.deepskychile.com/en/) 
-
-Lon : 70°W 51’ 11,86’'
-Lat : 30°S 31’ 34,71 »
-Alt : 1700m AMSL
-
-For this spectrum : 3 exposures of 1200s each in bin 1x1 taken in automatic mode with Prism V11 Software (https://www.prism-astro.com/) , spectrum process with ISIS software (http://www.astrosurf.com/buil/isis-software.html)
-Date : 07/09/2022 at 8h34’52’ UTC (middle time exposure) JJ Date : 2459829,8785
-
-And for more informations about 2SPOT, you wil find many informations in our website : https://2spot.org/EN/
-and also information about the team : https://2spot.org/EN/equipe.php
+%And for more informations about 2SPOT, you wil find many informations in our website : https://2spot.org/EN/
+%and also information about the team : https://2spot.org/EN/equipe.php
 
 
 \begin{figure*}
    \begin{centering}
    \includegraphics[width=\textwidth]{figures/2spot_spectrum.pdf}
-      \caption{2plot spectrum showing features of a G type star.
-      %
+      \caption{Spectrum of \asas\ showing features of a typical G type star.
               }
               \label{fig:2spotspectrum}
               \script{plot_2spot_spectrum.py}
               \end{centering}
        \end{figure*}
 
+\subsection{ALMA}
 
-
+The ALMA data were downloaded and processed through to a measurement set with CASA \citep{2007ASPC..376..127M}.
+%
+No source is visible in the default archive products, and we also detect no source at the expected location in CLEAN images.
+%
+We measure a source flux of $X \pm y$\,mJy, equivalent to an upper limit of $Z$\,mJy.
+%
+In terms of the infrared excess visible in the mid-IR with WISE this upper limit is not at all constraining, but does set limits on emission from cooler dust.
+%
+These limits are not particularly constraining either, with $L_{\rm dust}/L_\star \gtrsim 10^-3$ at $\sim$100\,K detectable (which for context is approximately the level seen for the very bright debris disk around $\beta$~Pictoris).
 
 \section{Analysis}\label{sec:dustcloud}
-
-
-
-
 
 \subsection{Dust properties from the colors in the optical}
 
@@ -501,17 +493,31 @@ Firstly, NEOWISE W1 and W2 photometry towards the star shows an increase in flux
 %
 Observations from the optical bands have a much higher cadence, but do not show any corresponding increase in flux.
 %
-This infrared only increase is consistent with a dust generating event, such as the collision of a planetoid with another planetoid or a terrestrial planet (REF REF).
+This infrared only increase is consistent with a dust generating event, such as the collision of a planetoid with another planetoid or a terrestrial planet (REF REF). This interpretation is also supported by the reddening of the star during the optical dimming, if we assume that both the optical and IR flux variations are caused by the same dust (discussed further below).
 %
-The resultant dust cloud has a considerably larger surface area than the progenitors, and this dust cloud is then heated by the flux of the star and rapidly reaches thermal equilibrium.
+The resultant dust cloud has a considerably larger surface area than the progenitors (which were not visible before the IR flux increase), and this dust cloud is then heated by some luminosity source. Typically the host star heats circumstellar dust, but we consider alternative possibilities below.
 %
-The temperature of the dust cloud can be estimated from spectral energy distribution measured towards the stellar system.
+% The temperature of the dust cloud can be estimated from spectral energy distribution (SED) measured towards the stellar system. A post-increase SED is shown in Figure \ref{fig:sed-after}, using WISE data from the first five post-increase epochs, for which the best-fit dust temperature is $910 \pm 50$\,K. This temperature is consistent with those derived from the time series, though more precise because the data have been averaged.
 
-About 1000 days after the IR flux increase, the stellar flux begins to decrease.
-%
-The absorption is larger at bluer wavelengths and is consistent with sub-micron sized dust absorption (REF REF).
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=1\textwidth]{figures/asassn-21qj-after.pdf}
+%     \caption{SED of \asas~after the IR flux increase. The blue line shows the stellar photosphere model, the red line the dust model (a blackbody), and the orange the total.}
+%     \label{fig:sed-after}
+% \end{figure}
 
-\subsection{Infrared increase}
+\subsection{Scenario independent constraints}
+
+We first consider some scenario independent constraints, as these illustrate some basic problems which are summarised in Figure \ref{fig:constr}. Most simply, the IR photometry requires very warm dust, but the delay between the IR flux increase and the optical dimming suggests material that is far from the star. While there are other means that stellar luminosity to heat dust, the star is the most conventional source, and requires the dust to be at about 0.1\,au. A several-year delay between the IR flux increase and the optical transit however implies that the material is on an orbit with a period of at least several years, and hence several au. The duration of the optical transit also suggests a distance of order an au or greater, since closer material would have a period that is shorter than the duration of the transit. Finally, a large orbital distance is also suggested by the gradients in the optical light curve, though the velocities inferred from the gradients are lower limits and hence the material could be closer.
+
+Thus, if the IR and optical flux varaitions have the same origin, there are basic incompatibilities for scenarios that assume an azimuthally confined clump of orbiting material that is heated by the star. Possible explanations therefore attempt to avoid these restrictions.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/fvsr.pdf}
+    \caption{Model-independent constraints in terms of dust fractional luminosity ($L_{\rm dust}/L_\star$) and stellocentric radius. The dot shows the location of the dust from an SED fit, and the curved line shows cooler dust that is consistent with just the WISE W2 flux. The diagonal line shows the upper limit from the ALMA non-detection. The vertical dotted line shows an approximate lower radial limit on the dust location based on the transit duration. The dashed line a lower radial limit based on the delay between the IR flux increase and optical transit. The vertical solid line shows an upper radial limit based on the optical light curve gradients.}
+    \label{fig:constr}
+\end{figure}
 
 This increase occurred between MJD \variable{output/t_before.txt} and MJD \variable{output/t_after.txt} dates, a period of approximately \variable{output/t_duration.txt} days.
 %
@@ -519,40 +525,18 @@ Subsequent NEOWISE measurements show an approximately constant excess flux for X
 
 We fit a blackbody SED to the excess flux in the two NEOWISE bands for each of the epochs.
 %
-Assuming grey emission (where $\upsilon(\lambda)\approx \upsilon$) we obtain an effective temperature of $_{IR} = 900\pm XXX$K, and $F_{IR}/F_{star}=0.03$.
+Assuming grey emission (where $\upsilon(\lambda)\approx \upsilon$) we obtain an effective temperature of $_{IR} = 900\pm XXX$K, and $F_{IR}/F_{star}=0.03$. Given the near-Solar luminosity of the star, this temperature implies a distance of approximately 0.1\,au if the material absorbs and emits as a blackbody, and of order a few times more distant if it is micron-sized dust (e.g. Pawellek). 
 %
-The sudden onset of the IR flux within 155.21 days followed by a constant level of flux implies that the dust cloud is optically thin by the time of the first measurement, and therefore has had to expand such that 0.03 of the solid angle around the star was subtended by dust and reradiated in the IR.
+The sudden onset of the IR flux within 155.21 days followed by a constant level of flux implies that the dust cloud reaches a (quasi) steady state within 6 months, though could be optically thick or thin.
 %
-An extimate for the surface area $A_{IR}$ of the dust can be estimated from $A_{IR}/(4\pi r_{IR}^2) = 0.03$ which leads to:
+Regardless, the dust distribution has had to expand such that 0.03 of the solid angle around the star was subtended by dust and reradiated in the IR.
+%
+An estimate for the surface area $A_{IR}$ of the dust can be estimated from $A_{IR}/(4\pi r_{IR}^2) = 0.03$ which leads to:
 
-$$A_{IR}=0.38 a_{IR}^2$$ 
+$$A_{IR}=0.38 r_{IR}^2$$ 
 
-where $a_{IR}$ is the distance of the dust from the star.
+where $r_{IR}$ is the distance of the dust from the star.
 
-If we assume that the dust cloud expanded from a point source out into a star-facing circular optically thin disk with area $A_{IR}$ and radius $r_{IR}$ in a time $t_{IR}$ (where this time has an upper limit of 6 months corresponding to the duration between the NEOWISE epochs), then we can estimate a linear velocity $v_{IR} t_{IR} = r_{IR}$ for the expansion of the cloud of:
-
-$$v_{IR} = \frac{r_{IR}}{t_{IR}} = \frac{0.35 a_{IR}}{t_{IR}} = $$
-%# A_{IR} / 4 pi (a_{IR})2 =  pi r_{IR}^2 / 4 pi a2 = 0.03
-% r2 / (4a2) = 0.03
-% $r_{IR} = 2a_{IR} sqrt(0.03)$
-
-A figure showing the temperature dependency is is Figure~\ref{fig:veloc_cons}.
-
-\begin{figure*}
-   \begin{centering}
-   \includegraphics[width=\textwidth]{figures/velocity_constraints.pdf}
-      \caption{Circular velocity as a function of semimajor axis, and the effective temperature of dust as a function of semi-major axis.
-              }
-              \label{fig:veloc_cons}
-              \script{calc_velocity_bounds_plots.py}
-              \end{centering}
-       \end{figure*}
-
-
-
-
-
-\subsection{Optical absorption}
 
 Hansen collision of terrestrial planet with scattered moon \citep{2022MNRAS.tmp.2636H}
 
@@ -574,11 +558,70 @@ The unusually warm (how much?) debris disk passing in front of a young star pres
 %
 The eclipse is expected to last for xxx days, allowing to perform further spectroscopic analysis of the dust in this system.}
 
+\subsection{HYP 1: unrelated phenomena} 
+
+As discussed below, the observations pose some problems regarding the location of the occulting cloud. The long timescale between the WISE flux increase and the optical dimming, and the gradients in the optical light curve, suggest that the dust is of order au away from the star. This however is contradicted by the hot dust temperature, which would place the dust near 0.1\,au. Important here is that the system first came to prominence because of the optical variability, even though subsequent investigation found that the IR flux increase occurred beforehand.
+
+A possible resolution is simply that the WISE flux increase and the optical dimming are unrelated coincidental phenomena. This explanation is unsatisfactory however, because both IR flux increases and dimming events are rare, particularly around stars that are not young. For example, constant near-IR excesses are exceptionally rare among main-sequence stars (1:10,000), and still uncommon for young stars \citep[1:100][]{2013MNRAS.433.2334K}. In addition, these rates are for 12$\,mu$m excesses that are largely constant; rates are lower at shorter wavelengths, and no star has been seen to show an increase from no excess to a sizeable excess \citep[][report a disappearing mid-IR excess, but this is the single example known]{2012Natur.487...74M}. Work has shown that young stars that do have unusually bright mid-IR excesses do have a high probability of showing IR flux variability \citep{2015ApJ...805...77M}, which suggests that \asas~could be a young system.
+
+Similarly, optical dimming events are also rare for main-sequence stars, for example only one was seen to undergo dust-related optical dimming with Kepler \citep{2016MNRAS.457.3988B}. Young stars that host protoplanetary disks do regularly show optical dimming (known as ``dippers''), but these generally have large and constant mid-IR excesses \citep[e.g.][]{2016ApJ...816...69A}.
+
+While it is hard to estimate the total probability of observing such a system, we can estimate that the probability of a random star that shows unusual optical dimming also having a mid-IR excess is at best 1\% if the system is young, and much lower if it is not. Not all mid-IR excess systems are variable, but quantifying the probability of variability is not simple, so we simply conclude that the coincidental optical and mid-IR flux variation is a best an order 1\% event, but probably much less probable.
+
+\subsection{HYP 2: dust heated by star}
+
+If one insists that the dust is heated by the star, then as noted above it must be relatively close to it; too close for the delay between the IR flux increase and the optical flux decrease to be explained as a fraction of the orbital period. For example, for material at 0.1\,au the orbital period is a few weeks. While we may still invoke some singular event to explain the increase in IR flux, e.g. a collision, the new material will rapidly shear azimuthally into a disk, and the optical dimming must then be explained by variation over multiple orbital timescales.
+
+The lack of significant variation in the WISE flux after the increase suggests that this shearing has largely happened within a period of six months. A longer timescale should lead to behaviour that is similar to that seen for stars such as ID8 \citep{2014Sci...345.1032M}, while the material is still shearing and has significant azimuthal variation. Thus, any changes that lead to occultation of the star are more likely related to changes in vertical structure of the disk. Such an increase could be caused by continued dynamical interactions between the massive debris, or excitation by a single larger body \citep[e.g.][]{1992Icar...96..107I}.
+
+A possible scenario is therefore that the debris was created in a collisional event involving one or two large bodies, resulting in a sizeable debris cloud. With respect to the collision center of mass, this cloud leaves with at least the escape velocity from the larger body, and is sheared out over tens of orbital periods. The random velocities of the debris cloud objects are then further increased by dynamical interactions (``stirring'') both between fragments, and by the original large bodies, the main relevant effect being that the scale height of the disk will slowly increase.
+
+To satisfy the observational constraints, the system must be near to edge-on, such that the disk does not initially block the star. Over time however, the increase in scale height begins to block the star, leading to the slow decrease in optical flux. The depth of the optical dimming implies that the disk was initially radially optically thick. The radial optical depth must now be decreasing, presumably due to ongoing collisional depletion, to explain the slow increase in optical flux. The key difference for this model is that there is not a discrete cloud of debris slowly passing in front of the star, and that the star's return to normal flux is instead related to collisional depletion. However, as the optical flux returns to normal, the IR excess should be decreasing in a similar way, because both depend on the radial optical depth of the disk. The decrease in IR flux should be somewhat delayed because the dust column that contributes to the IR excess also includes material on the far side of the star. There is currently insufficient WISE data to rule this model out, e.g. if the star returns to normal optical flux with little change in the IR excess, but this question should be resolved on a timescale of a few years.
+
+As above, this model has problems. For example, if the material is on an orbit at 0.1\,au, structures passing in front of the star should have transverse velocities of about 100\,km\,s$^{-1}$, significantly faster than inferred from the light curves. This issue is circumvented by asserting that the structures are sufficiently large and ``fluffy'' that the gradients are more related to the density gradients in the occulting structures than their velocity. There may also be a problem with the strong variation in the optical light curves; a disk that has undergone significant collisional evolution should have reached a quasi-steady state, where objects of all sizes from the largest bodies to smallest dust grains are all colliding on their respective timescales, which should mean that clumpy structure related to individual parent bodies has largely been erased. The geometry of the disk in this scenario may also be fine tuned, in that a radially optically thick disk may also block IR emission from the inner disk, thus requiring that the disk be optically thick at optical wavelengths, but not IR wavelengths. A few more years of data should help provide some guidance on this interpretation, and perhaps motivate radiative transfer models.
+
+\subsection{HYP 3: dust heated by synestia/collision} possibly matt?
+
+If we assume that the dust cloud expanded from a point source out into a star-facing circular optically thin disk with area $A_{IR}$ and radius $r_{IR}$ in a time $t_{IR}$ (where this time has an upper limit of 6 months corresponding to the duration between the NEOWISE epochs), then we can estimate a linear velocity $v_{IR} t_{IR} = r_{IR}$ for the expansion of the cloud of:
+
+$$v_{IR} = \frac{r_{IR}}{t_{IR}} = \frac{0.35 r_{IR}}{t_{IR}} = $$
+%# A_{IR} / 4 pi (a_{IR})2 =  pi r_{IR}^2 / 4 pi a2 = 0.03
+% r2 / (4a2) = 0.03
+% $r_{IR} = 2a_{IR} sqrt(0.03)$
+
+A figure showing the temperature dependency is is Figure~\ref{fig:veloc_cons}.
+
+\begin{figure*}
+   \begin{centering}
+   \includegraphics[width=\textwidth]{figures/velocity_constraints.pdf}
+      \caption{Circular velocity as a function of semimajor axis, and the effective temperature of dust as a function of semi-major axis.
+              }
+              \label{fig:veloc_cons}
+              \script{calc_velocity_bounds_plots.py}
+              \end{centering}
+       \end{figure*}
+
+Irregular collisions \citep{Genda15}.
+
+we are no longer tied to surface area/distance from star
+
+requires two large terreatrial planets to collide (grav binding energy mostly converted to hot dust - can we have a completely destructive collision?)
+
+transeverse velocity can now work
+
+problem is how to get fine sized dust and cooled off
+
+can we explain the constant temperature but decreasing flux from synestia?
+
+\subsection{HYP $4-\infty$}
+
+check tabby's star literature.
+
 %------------------------
 \section{Conclusions}\label{sec:conclusion}
 
    \begin{enumerate}
-      \item There was a collision between planetoids towards ASASSN-21qj which generated a debris cloud.
+      \item There was a collision between planetoids towards \asas\ which generated a debris cloud.
       %
       \item The cloud moved in front of the star, and we have a fresh measure of the debris from a collision.
       %
@@ -586,6 +629,13 @@ The eclipse is expected to last for xxx days, allowing to perform further spectr
     %
     The latter represent planetary material after the end of the main sequence of the host star. }
    \end{enumerate}
+
+predictions and future measurements:
+
+spectra in IR? can we see silicate cloud?
+
+
+
 
 \begin{acknowledgements}
 
@@ -615,6 +665,10 @@ Part of this research was carried out in part at the Jet Propulsion Laboratory, 
 %
 This publication makes use of VOSA, developed under the Spanish Virtual Observatory project supported by the Spanish MINECO through grant AyA2017-84089.
 %
+This publication makes use of VOSA, developed under the Spanish Virtual Observatory\footnote{\url{https://svo.cab.inta-csic.es}} project funded by MCIN/AEI/10.13039/501100011033/ through grant PID2020-112949GB-I00.
+%
+VOSA has been partially updated by using funding from the European Union's Horizon 2020 Research and Innovation Programme, under Grant Agreement 776403 (EXOPLANETS-A). 
+%
 This work has made use of data from the Asteroid Terrestrial-impact Last Alert System (ATLAS) project.
 %
 The Asteroid Terrestrial-impact Last Alert System (ATLAS) project is primarily funded to search for near earth asteroids through NASA grants NN12AR55G, 80NSSC18K0284, and 80NSSC18K1575; byproducts of the NEO search include images and catalogs from the survey area.
@@ -622,6 +676,8 @@ The Asteroid Terrestrial-impact Last Alert System (ATLAS) project is primarily f
 This work was partially funded by Kepler/K2 grant J1944/80NSSC19K0112 and HST GO-15889, and STFC grants ST/T000198/1 and ST/S006109/1.
 %
 The ATLAS science products have been made possible through the contributions of the University of Hawaii Institute for Astronomy, the Queen’s University Belfast, the Space Telescope Science Institute, the South African Astronomical Observatory, and The Millennium Institute of Astrophysics (MAS), Chile.
+%
+
 
 \end{acknowledgements}
 
