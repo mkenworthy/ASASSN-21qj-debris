@@ -44,7 +44,7 @@ ax1.errorbar(tavV['MJD'],tavV['fnorm']+1*offset,yerr=tavV['fnormerr'],color='red
 ax1.errorbar(tavI['MJD'],tavI['fnorm']+0*offset,yerr=tavI['fnormerr'],color='brown',fmt='.', label='AAVSO I')
 
 ax1.set_ylim(0,3.1)
-ax1.set_xlim(59300,59800)
+ax1.set_xlim(59300,60000)
 ax1.legend()
 ax1.set_xlabel('Epoch [MJD]',fontsize=18)
 ax1.tick_params(axis='x', labelsize=12)

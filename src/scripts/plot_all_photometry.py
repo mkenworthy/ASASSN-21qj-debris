@@ -43,7 +43,7 @@ ax1.scatter(tasV['MJD'],tasV['fnorm'],
 
 ax1.set_ylim(0,1.1)
 ax2.set_ylim(12,10.5)
-ax1.set_xlim(56600,59800)
+ax1.set_xlim(56600,60000)
 ax1.legend()
 ax2.legend()
 ax3.set_xlabel('Epoch [MJD]')

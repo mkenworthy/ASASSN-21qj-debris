@@ -30,7 +30,7 @@ offset = 0.6
 #ax1.errorbar(tavV['MJD'],tavV['fnorm']+1*offset,yerr=tavV['fnormerr'],color='red',fmt='.', label='AAVSO V')
 #ax1.errorbar(tavI['MJD'],tavI['fnorm']+0*offset,yerr=tavI['fnormerr'],color='brown',fmt='.', label='AAVSO I')
 
-ax2.set_xlim(59300,59800)
+ax2.set_xlim(59300,56000)
 ax2.set_xlabel('Epoch [MJD]',fontsize=18)
 ax2.tick_params(axis='x', labelsize=12)
 ax2.tick_params(axis='y', labelsize=12)
