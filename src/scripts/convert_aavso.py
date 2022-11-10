@@ -4,7 +4,7 @@ from astropy.io import ascii
 from astropy.table import unique,vstack
 import paths
 
-fin='aavso/aavsodata_62f60478b309b.txt'
+fin='aavso/aavsodata_636cdb53c895b.txt'
 t = ascii.read(paths.data / fin)
 
 

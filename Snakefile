@@ -9,7 +9,7 @@ rule proc_atlas:
         "src/scripts/convert_atlas.py"
 rule proc_asassn:
      input:
-        "src/data/asassn/light_curve_f51db35b-11b8-4840-a6d9-979a455d6978.csv"
+        "src/data/asassn/light_curve_a4748464-dd11-4557-ae7f-6c50774aa532.csv"
      output:
         "src/data/obs_ASASSN.ecsv"
      conda:
@@ -27,7 +27,7 @@ rule proc_neowise:
         "src/scripts/convert_neowise.py"
 rule proc_aavso:
      input:
-        "src/data/aavso/aavsodata_62f60478b309b.txt"
+        "src/data/aavso/aavsodata_636cdb53c895b.txt"
      output:
         "src/data/obs_AAVSO.ecsv"
      conda:

@@ -51,11 +51,11 @@ dependencies:
     src/scripts/convert_atlas.py:
         - src/data/atlas/job211831.txt
     src/scripts/convert_asassn.py:
-        - src/data/asassn/light_curve_f51db35b-11b8-4840-a6d9-979a455d6978.csv
+        - src/data/asassn/light_curve_a4748464-dd11-4557-ae7f-6c50774aa532.csv
     src/scripts/convert_neowise.py:
         - src/data/neowise/ASASSN-21qj_2013-2021.tbl
     src/scripts/convert_aavso.py:
-        - src/data/aavso/aavsodata_62f60478b309b.txt
+        - src/data/aavso/aavsodata_636cdb53c895b.txt
     src/scripts/plot_2spot_spectrum.py:
         - src/data/2spot/asassn-21qj_20220907_358_2SPOT.fits
     src/scripts/calc_stellar_lomb_scargle.py:

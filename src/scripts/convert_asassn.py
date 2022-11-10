@@ -4,7 +4,7 @@ from astropy.io import ascii
 from astropy.table import unique,vstack
 import paths
 
-fin='asassn/light_curve_f51db35b-11b8-4840-a6d9-979a455d6978.csv'
+fin='asassn/light_curve_a4748464-dd11-4557-ae7f-6c50774aa532.csv'
 t = ascii.read(paths.data / fin)
 
 #      HJD           UT Date       Camera FWHM Limit   mag   mag_err flux(mJy) flux_err Filter
