@@ -469,6 +469,47 @@ These limits are not particularly constraining either, with $L_{\rm dust}/L_\sta
 
 \subsection{Dust properties from the colors in the optical}
 
+{\bf Richelle plots}: The photometry shows deeper absorption at bluer wavelengths compared to longer wavelength passbands.
+%
+This is an indication that the stellar flux is being scattered by particles that are equal to or smaller than the wavelength of light.
+%
+By plotting the magnitude of the star versus colour (e.g V versus V-I) the particle size and surface density can be determined.
+%
+Plots of the light curve show reddening concistent with interstellar dust, and this reddening is parameterised with a reddening angle (Richelle: I'm not sure of the correct name for this!)
+
+The sampling of the photometry enables determination of the reddening as a function of time during the eclipse.
+%
+The reddening is calculated in 20 day bins and plotted in Figure ZZZZ, showing that the reddening angle is very consistent over the duration of the eclipse, but that there is a suggestion that the reddening angle changes gradually during the ingress and egress.
+
+TODO: to estimate the minimum mass of all the sub-micron dust in the eclipse and equate that to YYYYY kg of solid material.
+
+\subsection{Transverse velocity of the dust cloud}
+
+The photometry changes with time, and this is attributed to a cloud of dust moving in front of the stellar disk at a velocity $V_{dust}$ and that has a surface density that changes as a function of position in the dust cloud.
+%
+A lower bound can be derived for $V_{dust}$ by measuring the gradient of the light curve and determine what velocity a sharp edged and completely opaque occulter moving across the disk of the star would be need to make the same gradient.
+
+We measure the gradient of the light curve in an automated way by fitting straight lines to photometry between nights (XXX Richelle correct me on this!)
+%
+We determine a robust lower limit to the transverse velocity of 5 km\,s$^{-1}$ for the material moving in front of the star, assuming a radius for the star of $1.07 R_\odot$.
+%
+This means that if the dust is on a circular orbit, it has to be within XXX au equivalent to an orbital period of YYY years around the star.
+
+\subsection{Frequency analysis of the light curve}
+
+To search for signs of periodicity within the light curve before and during the eclipse, we perform a Lomb-Scargle analysis over two epochs indicated with the blue and orange regions in the upper panel of Figure\~\ref{fig:starlombscargle}.
+%
+The resultant periodograms are shown in the lower two panels of Figure\~\ref{fig:starlombscargle}, with the lower panel showing a zoom in from 0 to 50 days and the middle panel showing periodicities from 0 to 150 days.
+%
+We look for any perioditicies that could be associated with orbital motion aorund the star, so we look at the periodogram from 0 to 150 days during the eclipse.
+%
+As a comparison, we overplot the periodogram for the pre-eclipse light curve as the blue curve in the middle panel. 
+%
+As can be seen, there is some power seen at 40 days which is present in the pre-eclipse light curve, with some (non-significant) periodicities at longer periods.
+
+Looking for periodic stellar activity, the periodogram for the pre-eclipse light curve is shown from 0 to 50 days in the lower panel.
+%
+Here we see significant periods at around 6.5 and 11 days, which we attribute to light curve modulation due to starspots rotating in and out of view. 
 
 
 \begin{figure*}
@@ -493,9 +534,13 @@ Firstly, NEOWISE W1 and W2 photometry towards the star shows an increase in flux
 %
 Observations from the optical bands have a much higher cadence, but do not show any corresponding increase in flux.
 %
-This infrared only increase is consistent with a dust generating event, such as the collision of a planetoid with another planetoid or a terrestrial planet (REF REF). This interpretation is also supported by the reddening of the star during the optical dimming, if we assume that both the optical and IR flux variations are caused by the same dust (discussed further below).
+This infrared only increase is consistent with a dust generating event, such as the collision of a planetoid with another planetoid or a terrestrial planet (REF REF).
 %
-The resultant dust cloud has a considerably larger surface area than the progenitors (which were not visible before the IR flux increase), and this dust cloud is then heated by some luminosity source. Typically the host star heats circumstellar dust, but we consider alternative possibilities below.
+This interpretation is also supported by the reddening of the star during the optical dimming, if we assume that both the optical and IR flux variations are caused by the same dust (discussed further below).
+%
+The resultant dust cloud has a considerably larger surface area than the progenitors (which were not visible before the IR flux increase), and this dust cloud is then heated by some luminosity source.
+%
+Typically the host star heats circumstellar dust, but we consider alternative possibilities below.
 %
 % The temperature of the dust cloud can be estimated from spectral energy distribution (SED) measured towards the stellar system. A post-increase SED is shown in Figure \ref{fig:sed-after}, using WISE data from the first five post-increase epochs, for which the best-fit dust temperature is $910 \pm 50$\,K. This temperature is consistent with those derived from the time series, though more precise because the data have been averaged.
 
@@ -508,14 +553,36 @@ The resultant dust cloud has a considerably larger surface area than the progeni
 
 \subsection{Scenario independent constraints}
 
-We first consider some scenario independent constraints, as these illustrate some basic problems which are summarised in Figure \ref{fig:constr}. Most simply, the IR photometry requires very warm dust, but the delay between the IR flux increase and the optical dimming suggests material that is far from the star. While there are other means that stellar luminosity to heat dust, the star is the most conventional source, and requires the dust to be at about 0.1\,au. A several-year delay between the IR flux increase and the optical transit however implies that the material is on an orbit with a period of at least several years, and hence several au. The duration of the optical transit also suggests a distance of order an au or greater, since closer material would have a period that is shorter than the duration of the transit. Finally, a large orbital distance is also suggested by the gradients in the optical light curve, though the velocities inferred from the gradients are lower limits and hence the material could be closer.
+We first consider some scenario independent constraints, as these illustrate some basic problems which are summarised in Figure \ref{fig:constr}.
+%
+Most simply, the IR photometry requires very warm dust, but the delay between the IR flux increase and the optical dimming suggests material that is far from the star.
+%
+While there are other means that stellar luminosity to heat dust, the star is the most conventional source, and requires the dust to be at about 0.1\,au.
+%
+A several-year delay between the IR flux increase and the optical transit however implies that the material is on an orbit with a period of at least several years, and hence several au.
+%
+The duration of the optical transit also suggests a distance of order an au or greater, since closer material would have a period that is shorter than the duration of the transit.
+%
+Finally, a large orbital distance is also suggested by the gradients in the optical light curve, though the velocities inferred from the gradients are lower limits and hence the material could be closer.
 
-Thus, if the IR and optical flux varaitions have the same origin, there are basic incompatibilities for scenarios that assume an azimuthally confined clump of orbiting material that is heated by the star. Possible explanations therefore attempt to avoid these restrictions.
+Thus, if the IR and optical flux varaitions have the same origin, there are basic incompatibilities for scenarios that assume an azimuthally confined clump of orbiting material that is heated by the star.
+%
+Possible explanations therefore attempt to avoid these restrictions.
 
 \begin{figure}
     \centering
     \includegraphics[width=0.5\textwidth]{figures/fvsr.pdf}
-    \caption{Model-independent constraints in terms of dust fractional luminosity ($L_{\rm dust}/L_\star$) and stellocentric radius. The dot shows the location of the dust from an SED fit, and the curved line shows cooler dust that is consistent with just the WISE W2 flux. The diagonal line shows the upper limit from the ALMA non-detection. The vertical dotted line shows an approximate lower radial limit on the dust location based on the transit duration. The dashed line a lower radial limit based on the delay between the IR flux increase and optical transit. The vertical solid line shows an upper radial limit based on the optical light curve gradients.}
+    \caption{Model-independent constraints in terms of dust fractional luminosity ($L_{\rm dust}/L_\star$) and stellocentric radius.
+    %
+    The dot shows the location of the dust from an SED fit, and the curved line shows cooler dust that is consistent with the WISE W2 flux alone.
+    %
+    The diagonal line shows the upper limit from the ALMA non-detection.
+    %
+    The vertical dotted line shows an approximate lower radial limit on the dust location based on the transit duration.
+    %
+    The dashed line a lower radial limit based on the delay between the IR flux increase and optical transit.
+    %
+    The vertical solid line shows an upper radial limit based on the optical light curve gradients.}
     \label{fig:constr}
 \end{figure}
 
@@ -536,7 +603,6 @@ An estimate for the surface area $A_{IR}$ of the dust can be estimated from $A_{
 $$A_{IR}=0.38 r_{IR}^2$$ 
 
 where $r_{IR}$ is the distance of the dust from the star.
-
 
 Hansen collision of terrestrial planet with scattered moon \citep{2022MNRAS.tmp.2636H}
 
