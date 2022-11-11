@@ -14,7 +14,7 @@ datasets:
       aavsodata_636cdb53c895b.txt: src/data/aavso/aavsodata_636cdb53c895b.txt
       ASASSN-21qj_2013-2021.tbl: src/data/neowise/ASASSN-21qj_2013-2021.tbl
       job211831.txt: src/data/atlas/job211831.txt
-      light_curve_a4748464-dd11-4557-ae7f-6c50774aa532.csv: src/data/asassn/ light_curve_a4748464-dd11-4557-ae7f-6c50774aa532.csv
+      light_curve_a4748464-dd11-4557-ae7f-6c50774aa532.csv: src/data/asassn/light_curve_a4748464-dd11-4557-ae7f-6c50774aa532.csv
       Misc_Atlas.cyan.dat: src/data/filter_curves/Misc_Atlas.cyan.dat
       Bessel_B-1.txt: src/data/filter_curves/Bessel_B-1.txt
       SLOAN.SDSS.r.xml: src/data/filter_curves/SLOAN.SDSS.r.xml
