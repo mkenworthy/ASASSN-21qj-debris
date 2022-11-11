@@ -349,17 +349,17 @@ Two of the original stations (one in Hawaii and one in Chile) are fitted with $V
 ASAS-SN observes the whole sky every night with a limiting magnitude of about 17 mag in the $V$ and $g$ bands.
 %
 
-\subsection{TESS}
+%\subsection{TESS}
 
-The Transiting Exoplanet Survey Satellite \citep[TESS; ][]{2015JATIS...1a4003R} is a satellite designed to survey for transiting exoplanets among the brightest and nearest stars over most of the sky.
+%The Transiting Exoplanet Survey Satellite \citep[TESS; ][]{2015JATIS...1a4003R} is a satellite designed to survey for transiting exoplanets among the brightest and nearest stars over most of the sky.
 %
-The TESS satellite orbits the Earth every 13.7 days on a highly elliptical orbit, scanning a sector of the sky spanning 24\degr $\times$ 96\degr\ for a total of two orbits, before moving on to the next sector. 
+%The TESS satellite orbits the Earth every 13.7 days on a highly elliptical orbit, scanning a sector of the sky spanning 24\degr $\times$ 96\degr\ for a total of two orbits, before moving on to the next sector. 
 %
-It captures images at a 2 second (used for guiding), 20 seconds (for 1000 bright asteroseismology targets), 120 seconds (for 200 000 stars that are likely planet hosts) and 30 minutes (full frame image) cadences.
+%It captures images at a 2 second (used for guiding), 20 seconds (for 1000 bright asteroseismology targets), 120 seconds (for 200 000 stars that are likely planet hosts) and 30 minutes (full frame image) cadences.
 %
-The instrument consists of 4 CCDs each with a field of view of 24\degr$\times$24\degr, with a wide band-pass filter from 600-1000 nm (similar to the $I_C$ band) and has a limiting magnitude of about 14-15 mag ($I_C$).
+%The instrument consists of 4 CCDs each with a field of view of 24\degr$\times$24\degr, with a wide band-pass filter from 600-1000 nm (similar to the $I_C$ band) and has a limiting magnitude of about 14-15 mag ($I_C$).
 %
-The data was extracted from the TESS archive using the {\tt eleanor} package \citep{Feinstein19} which corrected for known systematics in the cameras and telescope.
+%The data was extracted from the TESS archive using the {\tt eleanor} package \citep{Feinstein19} which corrected for known systematics in the cameras and telescope.
 
 \subsection{ROAD Photometry}
 
@@ -378,7 +378,7 @@ The NEOWISE photometry is presented with the ASASSN $q$ light curve in Figure~\r
 \includegraphics[width=\textwidth]{figures/all_photometry.png}
 \caption{NEOWISE $W1$ and $W2$ photometry of the star, with the WISE color in the lowest panel.
 %
-The $NEOWISE$ color changes from colourless to very red, which fades back towards colourless over $\sim 500$ days.
+The $NEOWISE$ color changes from colourless to very red, which now fades back towards colourless over $\sim 500$ days.
 }
 \label{fig:wisephot}
 \script{plot_all_photometry.py}
@@ -413,8 +413,7 @@ NEOWISE....
 
 \subsection{ATLAS}
 
-ATLAS is a project that searches for near earth asteroids down to a magnitude of 19 
-\citep{Tonry18}.
+ATLAS is a project that searches for near earth asteroids down to a magnitude of 19 \citep{Tonry18}.
 %
 Two filters were obtained, the `o' and `c' filters respectively.
 %
@@ -422,7 +421,7 @@ Photometry consists of two to four photometric points observed each night when c
 %
 Photometry with large errors was rejected in a first pass.
 %
-The remaining observations during a night were averaged and an error based on the r.m.s. of these nightly points was calaulated.
+The remaining observations during a night were averaged and an error based on the r.m.s. of these nightly points was calculated.
 %
 The photometry covers the time period where the collision event occurred. 
 
@@ -435,9 +434,11 @@ The telescope is a Ritchey-Chretien telescope ($d=305$mm) at $f/5$ (with focal r
 %
 The spectrograph is a Spectrograph Alpy 600 $R=570$ with a $23\mu m$ wide slit\footnote{\url{https://www.shelyak.com/produit/alpy-600/?lang=en}} and an ATIK 414ex camera\footnote{\url{https://www.atik-cameras.com/product/atik-414ex/}}.
 %
-The spectrum is composed of three unbinned exposures of 1200s each, taken in automatic mode with Prism V11 Software (https://www.prism-astro.com/) , spectrum process with ISIS software\footnote{\url{http://www.astrosurf.com/buil/isis-software.html}}.
+The spectrum is composed of three unbinned exposures of 1200s each, taken in automatic mode with Prism V11 Software\footnote{\url{https://www.prism-astro.com/}}, and the spectrum is processed with ISIS software\footnote{\url{http://www.astrosurf.com/buil/isis-software.html}}.
 %
 The final spectrum is shown in Figure~\ref{fig:2spotspectrum}.
+
+The spectrum shows the absorption features of a typical early G-type star, and apart from the slope which is shaped by the dust absorption, we see no signs of gas absorption in this spectrum, implying that there is only dust in the intervening material.
 
 %And for more informations about 2SPOT, you wil find many informations in our website : https://2spot.org/EN/
 %and also information about the team : https://2spot.org/EN/equipe.php
@@ -459,7 +460,7 @@ The ALMA data were downloaded and processed through to a measurement set with CA
 %
 No source is visible in the default archive products, and we also detect no source at the expected location in CLEAN images.
 %
-We measure a source flux of $X \pm y$\,mJy, equivalent to an upper limit of $Z$\,mJy.
+We measure a source flux of $XXXX \pm YYYY$\,mJy, equivalent to an upper limit of $ZZZZ$\,mJy.
 %
 In terms of the infrared excess visible in the mid-IR with WISE this upper limit is not at all constraining, but does set limits on emission from cooler dust.
 %
@@ -475,7 +476,7 @@ This is an indication that the stellar flux is being scattered by particles that
 %
 By plotting the magnitude of the star versus colour (e.g V versus V-I) the particle size and surface density can be determined.
 %
-Plots of the light curve show reddening concistent with interstellar dust, and this reddening is parameterised with a reddening angle (Richelle: I'm not sure of the correct name for this!)
+Plots of the light curve show reddening consistent with interstellar dust, and this reddening is parameterised with a reddening angle {\bf (Richelle: I'm not sure of the correct name for this!)}
 
 The sampling of the photometry enables determination of the reddening as a function of time during the eclipse.
 %
@@ -489,7 +490,7 @@ The photometry changes with time, and this is attributed to a cloud of dust movi
 %
 A lower bound can be derived for $V_{dust}$ by measuring the gradient of the light curve and determine what velocity a sharp edged and completely opaque occulter moving across the disk of the star would be need to make the same gradient.
 
-We measure the gradient of the light curve in an automated way by fitting straight lines to photometry between nights (XXX Richelle correct me on this!)
+We measure the gradient of the light curve in an automated way by fitting straight lines to photometry between nights {\bf (XXX Richelle correct me on this!)}
 %
 We determine a robust lower limit to the transverse velocity of 5 km\,s$^{-1}$ for the material moving in front of the star, assuming a radius for the star of $1.07 R_\odot$.
 %
@@ -501,7 +502,7 @@ This means that if the dust is on a circular orbit, it has to be within XXX au e
 %
 %The resultant periodograms are shown in the lower two panels of Figure\~\ref{fig:starlombscargle}, with the lower panel showing a zoom in from 0 to 50 days and the middle panel showing periodicities from 0 to 150 days.
 %
-We look for any perioditicies that could be associated with orbital motion aorund the star, so we look at the periodogram from 0 to 150 days during the eclipse.
+We look for any periodicities that could be associated with orbital motion around the star, so we look at the periodogram from 0 to 150 days during the eclipse.
 %
 As a comparison, we overplot the periodogram for the pre-eclipse light curve as the blue curve in the middle panel. 
 %
@@ -557,15 +558,15 @@ We first consider some scenario independent constraints, as these illustrate som
 %
 Most simply, the IR photometry requires very warm dust, but the delay between the IR flux increase and the optical dimming suggests material that is far from the star.
 %
-While there are other means that stellar luminosity to heat dust, the star is the most conventional source, and requires the dust to be at about 0.1\,au.
+While there are other means for stellar luminosity to heat dust, the star is the most conventional source, and requires the dust to be at about 0.1\,au.
 %
-A several-year delay between the IR flux increase and the optical transit however implies that the material is on an orbit with a period of at least several years, and hence several au.
+A several-year delay between the IR flux increase and the optical transit, however, implies that the material is on an orbit with a period of at least several years, and hence several au.
 %
 The duration of the optical transit also suggests a distance of order an au or greater, since closer material would have a period that is shorter than the duration of the transit.
 %
 Finally, a large orbital distance is also suggested by the gradients in the optical light curve, though the velocities inferred from the gradients are lower limits and hence the material could be closer.
 
-Thus, if the IR and optical flux varaitions have the same origin, there are basic incompatibilities for scenarios that assume an azimuthally confined clump of orbiting material that is heated by the star.
+Thus, if the IR and optical flux variations have the same origin, there are basic incompatibilities for scenarios that assume an azimuthally confined clump of orbiting material that is heated by the star.
 %
 Possible explanations therefore attempt to avoid these restrictions.
 
@@ -592,11 +593,13 @@ Subsequent NEOWISE measurements show an approximately constant excess flux for X
 
 We fit a blackbody SED to the excess flux in the two NEOWISE bands for each of the epochs.
 %
-Assuming grey emission (where $\upsilon(\lambda)\approx \upsilon$) we obtain an effective temperature of $_{IR} = 900\pm XXX$K, and $F_{IR}/F_{star}=0.03$. Given the near-Solar luminosity of the star, this temperature implies a distance of approximately 0.1\,au if the material absorbs and emits as a blackbody, and of order a few times more distant if it is micron-sized dust (e.g. Pawellek). 
+Assuming grey emission (where $\upsilon(\lambda)\approx \upsilon$) we obtain an effective temperature of $_{IR} = 1000\pm XXX$K, and $F_{IR}/F_{star}=0.03$.
+%
+Given the near-Solar luminosity of the star, this temperature implies a distance of approximately 0.1\,au if the material absorbs and emits as a blackbody, and of order a few times more distant if it is micron-sized dust (e.g. Pawellek). 
 %
 The sudden onset of the IR flux within 155.21 days followed by a constant level of flux implies that the dust cloud reaches a (quasi) steady state within 6 months, though could be optically thick or thin.
 %
-Regardless, the dust distribution has had to expand such that 0.03 of the solid angle around the star was subtended by dust and reradiated in the IR.
+Regardless, the dust distribution has had to expand such that 0.03 of the solid angle around the star was subtended by dust and re-radiated in the IR.
 %
 An estimate for the surface area $A_{IR}$ of the dust can be estimated from $A_{IR}/(4\pi r_{IR}^2) = 0.03$ which leads to:
 
@@ -604,49 +607,87 @@ $$A_{IR}=0.38 r_{IR}^2$$
 
 where $r_{IR}$ is the distance of the dust from the star.
 
-Hansen collision of terrestrial planet with scattered moon \citep{2022MNRAS.tmp.2636H}
-
-Cound be a ring system
-
-Alternatives?
-
-\textcolor{magenta}{Probing disintegrating planetary material has been proven to be a very useful method to access the composition of building blocks of planets outside of the Solar System.
-%
-E.g. the disintegration of a gas giant around a white dwarf was used to infer its composition \citep{Gaensike2019}.
-%
-White dwarf star pollution has also yielded insights about refractory (Fe/Mg/Ca) element content of rocky  material around such stars \citep{Turner2020,Putirka2021,Blouin2020}.
-%
-See also \cite{Veras2021} for a review.}
-
-\textcolor{magenta}{Planets and asteroids falling into white dwarfs, however, haven been probably heavily processed during the late stellar evolution.
-%
-The unusually warm (how much?) debris disk passing in front of a young star presented in this work, on the other hand, may allow to probe the interior of planetesimals in the early stages of planet formation.
-%
-The eclipse is expected to last for xxx days, allowing to perform further spectroscopic analysis of the dust in this system.}
+%%Hansen collision of terrestrial planet with scattered moon \citep{2022MNRAS.tmp.2636H}
 
 \subsection{HYP 1: unrelated phenomena} 
 
-As discussed below, the observations pose some problems regarding the location of the occulting cloud. The long timescale between the WISE flux increase and the optical dimming, and the gradients in the optical light curve, suggest that the dust is of order au away from the star. This however is contradicted by the hot dust temperature, which would place the dust near 0.1\,au. Important here is that the system first came to prominence because of the optical variability, even though subsequent investigation found that the IR flux increase occurred beforehand.
+As discussed below, the observations pose some problems regarding the location of the occulting cloud.
+%
+The long timescale between the WISE flux increase and the optical dimming, and the gradients in the optical light curve, suggest that the dust is of order au away from the star.
+%
+This however is contradicted by the hot dust temperature, which would place the dust near 0.1\,au.
+%
+Important here is that the system first came to prominence because of the optical variability, even though subsequent investigation found that the IR flux increase occurred beforehand.
 
-A possible resolution is simply that the WISE flux increase and the optical dimming are unrelated coincidental phenomena. This explanation is unsatisfactory however, because both IR flux increases and dimming events are rare, particularly around stars that are not young. For example, constant near-IR excesses are exceptionally rare among main-sequence stars (1:10,000), and still uncommon for young stars \citep[1:100][]{2013MNRAS.433.2334K}. In addition, these rates are for 12$\,mu$m excesses that are largely constant; rates are lower at shorter wavelengths, and no star has been seen to show an increase from no excess to a sizeable excess \citep[][report a disappearing mid-IR excess, but this is the single example known]{2012Natur.487...74M}. Work has shown that young stars that do have unusually bright mid-IR excesses do have a high probability of showing IR flux variability \citep{2015ApJ...805...77M}, which suggests that \asas~could be a young system.
+A possible resolution is simply that the WISE flux increase and the optical dimming are unrelated coincidental phenomena.
+%
+This explanation is unsatisfactory however, because both IR flux increases and dimming events are rare, particularly around stars that are not young.
+%
+For example, constant near-IR excesses are exceptionally rare among main-sequence stars (1:10,000), and still uncommon for young stars \citep[1:100][]{2013MNRAS.433.2334K}.
+%
+In addition, these rates are for 12$\,mu$m excesses that are largely constant; rates are lower at shorter wavelengths, and no star has been seen to show an increase from no excess to a sizeable excess \citep[][report a disappearing mid-IR excess, but this is the single example known]{2012Natur.487...74M}.
+%
+Work has shown that young stars that do have unusually bright mid-IR excesses do have a high probability of showing IR flux variability \citep{2015ApJ...805...77M}, which suggests that \asas~could be a young system.
 
-Similarly, optical dimming events are also rare for main-sequence stars, for example only one was seen to undergo dust-related optical dimming with Kepler \citep{2016MNRAS.457.3988B}. Young stars that host protoplanetary disks do regularly show optical dimming (known as ``dippers''), but these generally have large and constant mid-IR excesses \citep[e.g.][]{2016ApJ...816...69A}.
+Similarly, optical dimming events are also rare for main-sequence stars, for example only one was seen to undergo dust-related optical dimming with Kepler \citep{2016MNRAS.457.3988B}.
+%
+Young stars that host protoplanetary disks do regularly show optical dimming (known as ``dippers''), but these generally have large and constant mid-IR excesses \citep[e.g.][]{2016ApJ...816...69A}.
 
-While it is hard to estimate the total probability of observing such a system, we can estimate that the probability of a random star that shows unusual optical dimming also having a mid-IR excess is at best 1\% if the system is young, and much lower if it is not. Not all mid-IR excess systems are variable, but quantifying the probability of variability is not simple, so we simply conclude that the coincidental optical and mid-IR flux variation is a best an order 1\% event, but probably much less probable.
+While it is hard to estimate the total probability of observing such a system, we can estimate that the probability of a random star that shows unusual optical dimming also having a mid-IR excess is at best 1\% if the system is young, and much lower if it is not.
+%
+Not all mid-IR excess systems are variable, but quantifying the probability of variability is not simple, so we simply conclude that the coincidental optical and mid-IR flux variation is a best an order 1\% event, but probably much less probable.
 
 \subsection{HYP 2: dust heated by star}
 
-If one insists that the dust is heated by the star, then as noted above it must be relatively close to it; too close for the delay between the IR flux increase and the optical flux decrease to be explained as a fraction of the orbital period. For example, for material at 0.1\,au the orbital period is a few weeks. While we may still invoke some singular event to explain the increase in IR flux, e.g. a collision, the new material will rapidly shear azimuthally into a disk, and the optical dimming must then be explained by variation over multiple orbital timescales.
+If one insists that the dust is heated by the star, then as noted above it must be relatively close to it; too close for the delay between the IR flux increase and the optical flux decrease to be explained as a fraction of the orbital period.
+%
+For example, for material at 0.1\,au the orbital period is a few weeks.
+%
+While we may still invoke some singular event to explain the increase in IR flux, e.g. a collision, the new material will rapidly shear azimuthally into a disk, and the optical dimming must then be explained by variation over multiple orbital timescales.
 
-The lack of significant variation in the WISE flux after the increase suggests that this shearing has largely happened within a period of six months. A longer timescale should lead to behaviour that is similar to that seen for stars such as ID8 \citep{2014Sci...345.1032M}, while the material is still shearing and has significant azimuthal variation. Thus, any changes that lead to occultation of the star are more likely related to changes in vertical structure of the disk. Such an increase could be caused by continued dynamical interactions between the massive debris, or excitation by a single larger body \citep[e.g.][]{1992Icar...96..107I}.
+The lack of significant variation in the WISE flux after the increase suggests that this shearing has largely happened within a period of six months.
+%
+A longer timescale should lead to behaviour that is similar to that seen for stars such as ID8 \citep{2014Sci...345.1032M}, while the material is still shearing and has significant azimuthal variation.
+%
+Thus, any changes that lead to occultation of the star are more likely related to changes in vertical structure of the disk.
+%
+Such an increase could be caused by continued dynamical interactions between the massive debris, or excitation by a single larger body \citep[e.g.][]{1992Icar...96..107I}.
 
-A possible scenario is therefore that the debris was created in a collisional event involving one or two large bodies, resulting in a sizeable debris cloud. With respect to the collision center of mass, this cloud leaves with at least the escape velocity from the larger body, and is sheared out over tens of orbital periods. The random velocities of the debris cloud objects are then further increased by dynamical interactions (``stirring'') both between fragments, and by the original large bodies, the main relevant effect being that the scale height of the disk will slowly increase.
+A possible scenario is therefore that the debris was created in a collisional event involving one or two large bodies, resulting in a sizeable debris cloud.
+%
+With respect to the collision center of mass, this cloud leaves with at least the escape velocity from the larger body, and is sheared out over tens of orbital periods.
+%
+The random velocities of the debris cloud objects are then further increased by dynamical interactions (``stirring'') both between fragments, and by the original large bodies, the main relevant effect being that the scale height of the disk will slowly increase.
 
-To satisfy the observational constraints, the system must be near to edge-on, such that the disk does not initially block the star. Over time however, the increase in scale height begins to block the star, leading to the slow decrease in optical flux. The depth of the optical dimming implies that the disk was initially radially optically thick. The radial optical depth must now be decreasing, presumably due to ongoing collisional depletion, to explain the slow increase in optical flux. The key difference for this model is that there is not a discrete cloud of debris slowly passing in front of the star, and that the star's return to normal flux is instead related to collisional depletion. However, as the optical flux returns to normal, the IR excess should be decreasing in a similar way, because both depend on the radial optical depth of the disk. The decrease in IR flux should be somewhat delayed because the dust column that contributes to the IR excess also includes material on the far side of the star. There is currently insufficient WISE data to rule this model out, e.g. if the star returns to normal optical flux with little change in the IR excess, but this question should be resolved on a timescale of a few years.
+To satisfy the observational constraints, the system must be near to edge-on, such that the disk does not initially block the star.
+%
+Over time however, the increase in scale height begins to block the star, leading to the slow decrease in optical flux.
+%
+The depth of the optical dimming implies that the disk was initially radially optically thick.
+%
+The radial optical depth must now be decreasing, presumably due to ongoing collisional depletion, to explain the slow increase in optical flux.
+%
+The key difference for this model is that there is not a discrete cloud of debris slowly passing in front of the star, and that the star's return to normal flux is instead related to collisional depletion.
+%
+However, as the optical flux returns to normal, the IR excess should be decreasing in a similar way, because both depend on the radial optical depth of the disk.
+%
+The decrease in IR flux should be somewhat delayed because the dust column that contributes to the IR excess also includes material on the far side of the star.
+%
+There is currently insufficient WISE data to rule this model out, e.g. if the star returns to normal optical flux with little change in the IR excess, but this question should be resolved on a timescale of a few years.
 
-As above, this model has problems. For example, if the material is on an orbit at 0.1\,au, structures passing in front of the star should have transverse velocities of about 100\,km\,s$^{-1}$, significantly faster than inferred from the light curves. This issue is circumvented by asserting that the structures are sufficiently large and ``fluffy'' that the gradients are more related to the density gradients in the occulting structures than their velocity. There may also be a problem with the strong variation in the optical light curves; a disk that has undergone significant collisional evolution should have reached a quasi-steady state, where objects of all sizes from the largest bodies to smallest dust grains are all colliding on their respective timescales, which should mean that clumpy structure related to individual parent bodies has largely been erased. The geometry of the disk in this scenario may also be fine tuned, in that a radially optically thick disk may also block IR emission from the inner disk, thus requiring that the disk be optically thick at optical wavelengths, but not IR wavelengths. A few more years of data should help provide some guidance on this interpretation, and perhaps motivate radiative transfer models.
+As above, this model has problems.
+%
+For example, if the material is on an orbit at 0.1\,au, structures passing in front of the star should have transverse velocities of about 100\,km\,s$^{-1}$, significantly faster than inferred from the light curves.
+%
+This issue is circumvented by asserting that the structures are sufficiently large and ``fluffy'' that the gradients are more related to the density gradients in the occulting structures than their velocity.
+%
+There may also be a problem with the strong variation in the optical light curves; a disk that has undergone significant collisional evolution should have reached a quasi-steady state, where objects of all sizes from the largest bodies to smallest dust grains are all colliding on their respective timescales, which should mean that clumpy structure related to individual parent bodies has largely been erased.
+%
+The geometry of the disk in this scenario may also be fine tuned, in that a radially optically thick disk may also block IR emission from the inner disk, thus requiring that the disk be optically thick at optical wavelengths, but not IR wavelengths.
+%
+A few more years of data should help provide some guidance on this interpretation, and perhaps motivate radiative transfer models.
 
-\subsection{HYP 3: dust heated by synestia/collision} possibly matt?
+\subsection{HYP 3: dust heated by synestia/collision} 
 
 If we assume that the dust cloud expanded from a point source out into a star-facing circular optically thin disk with area $A_{IR}$ and radius $r_{IR}$ in a time $t_{IR}$ (where this time has an upper limit of 6 months corresponding to the duration between the NEOWISE epochs), then we can estimate a linear velocity $v_{IR} t_{IR} = r_{IR}$ for the expansion of the cloud of:
 
@@ -667,41 +708,69 @@ A figure showing the temperature dependency is is Figure~\ref{fig:veloc_cons}.
               \end{centering}
        \end{figure*}
 
-Irregular collisions \citep{Genda15}.
+%Irregular collisions \citep{Genda15}.
 
-we are no longer tied to surface area/distance from star
+One advantage of this hypothesis is that we are no longer tied to surface area/distance from star challenge, and that the derived circular velocities from the light curve gradients can be made consistent with an orbit out at Jupiter/Saturn distances.
+%
+We therefore require a new energy source to heat the dust - we note that the gravitational binding energy of two large terrestrial planets colliding can produce enough energy over one year to explain the observed energy flux, but problems with keeping the rapidly expanding clouds of dust warm enough for the thermal emission remain.
+%
+One possible intriguing explanation is that we are seeing the formation of a synestia - this is a hypothesised structure thought to exist just after the collision that would subsequently form the Moon REF LANE.
+%
+A synestia is a silicate rich luminous object with an effective temperature of over a thousand Kelvin and a diameter on the order of 200,000 km.
+%
+This could provide a heating source for the optically thin dust cloud surrounding it for the duration of the observations.
+%
+Long wavelength spectroscopy could reveal emission or absorption features of silicates from the synestia, confirming the existence of these objects.
 
-requires two large terreatrial planets to collide (grav binding energy mostly converted to hot dust - can we have a completely destructive collision?)
+%\subsection{HYP $4-\infty$}
 
-transeverse velocity can now work
-
-problem is how to get fine sized dust and cooled off
-
-can we explain the constant temperature but decreasing flux from synestia?
-
-\subsection{HYP $4-\infty$}
-
-check tabby's star literature.
+%check tabby's star literature.
 
 %------------------------
 \section{Conclusions}\label{sec:conclusion}
+
+Probing disintegrating planetary material has been proven to be a very useful method to access the composition of building blocks of planets outside of the Solar System.
+%
+E.g. the disintegration of a gas giant around a white dwarf was used to infer its composition \citep{Gaensike2019}.
+%
+White dwarf star pollution has also yielded insights about refractory (Fe/Mg/Ca) element content of rocky  material around such stars \citep{Turner2020,Putirka2021,Blouin2020}.
+%
+See also \cite{Veras2021} for a review.
+
+Planets and asteroids falling into white dwarfs, however, haven been probably heavily processed during the late stellar evolution.
+%
+The unusually warm dust passing in front of a young star presented in this work, on the other hand, may allow to probe the interior of planetesimals in the early stages of planet formation.
+%
+The eclipse is expected to last for another 200 days, allowing us to perform further spectroscopic analysis of the dust in this system.
 
    \begin{enumerate}
       \item There was a collision between planetoids towards \asas\ which generated a debris cloud.
       %
       \item The cloud moved in front of the star, and we have a fresh measure of the debris from a collision.
       %
-     \item \textcolor{magenta}{Probing dust of material in the early stages of planet formation is complementary to studies of white dwarf polluters.
+     \item Probing dust of material in the early stages of planet formation is complementary to studies of white dwarf polluters.
     %
-    The latter represent planetary material after the end of the main sequence of the host star. }
+    The latter represent planetary material after the end of the main sequence of the host star.
    \end{enumerate}
 
-predictions and future measurements:
 
-spectra in IR? can we see silicate cloud?
+Future observations include IR high contrast imaging in order to see if the 4-5 microns excess is a point source or is now extended.
+%
+A disk of dust that is about 1au in length has an angular size of 20 millarcsec at the distance of \asas .
+%
+This can be marginally resolved with K band imaging with an 8m class telescope with a high contrast imager such as ERIS.
+%
+The same camera can carry out integral field spectroscopy of this system, and search for silicate absorption in the transmitted light spectra, if carried out before the end of the eclipse.
 
+If the collision remnant has not been completely destroyed, orbital motion over the next five to ten years will place it at about 50 milliarcseconds from the star, marginally resolvable with ERIS.
+%
+This star is a prime target for longer wavelength observations, such as MIRI with the JWST.
 
-
+The prospect of detecting more of these systems is increasing, with the large scale surveys and triggers provided by ASAS-SN, and when the LSST sees first light, the detection and selection of stars to study will be triggered by all sky observations such as these.
+%
+Combined with J1407, PDS 110, and several other transiting extended disks, these present an opportunity to study with unprecedented angular resolution the substructure of debris clouds from terrestrial planet collision, and the substructure of circumplanetary disks that are home to exomoon formation, providing an additional detection and characterisation channel.
+%
+The next decade will result in the detection of several dozen of these transiting systems, and having ephemerides for systems that show repeated eclipses will enable targeted observing campaigns.
 
 \begin{acknowledgements}
 
