@@ -31,7 +31,6 @@ frequencym, powerm = LombScargle(tasVm['MJD'], tasVm['fnorm']-1.0,tasVm['fnormer
 t_ecli_start = 59314.
 t_ecli_end   = 59750.
 
-
 # select quiet star photometry
 m2 = (tasg['MJD']>t_ecli_start) * (tasg['MJD']<t_ecli_end)
 
@@ -39,10 +38,7 @@ tasgecl=tasg[m2]
 
 frequencym2, powerm2 = LombScargle(tasgecl['MJD'], tasgecl['fnorm']-1.0,tasgecl['fnormerr']).autopower()
 
-
-
 fig, (ax1,ax2,ax3) = plt.subplots(3,1,figsize = (10,7))
-
 
 ax1.scatter(tasg['MJD'],tasg['fnorm'],
     color='green',
@@ -59,7 +55,6 @@ ax1.scatter(tasV['MJD'],tasV['fnorm'],
 
 ax1.axvspan(t_quiet_start, t_quiet_end, alpha=0.2, color='blue')
 ax1.axvspan(t_ecli_start, t_ecli_end, alpha=0.2, color='orange')
-
 
 ax2.plot(1./frequencym, powerm, color='blue')
 ax2.plot(1/frequencym2, powerm2, color='orange')
