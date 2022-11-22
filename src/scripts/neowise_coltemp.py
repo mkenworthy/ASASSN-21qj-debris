@@ -32,8 +32,8 @@ w2xs_lo = w2flux_lo - w2phot
 w1xs_hi = w1flux_hi - w1phot
 w2xs_hi = w2flux_hi - w2phot
 
-w1xs_err = (w1xs_hi - w1xs_lo) / 2
-w2xs_err = (w2xs_hi - w2xs_lo) / 2
+w1xs_err = (w1xs_hi - w1xs_lo) / 2.
+w2xs_err = (w2xs_hi - w2xs_lo) / 2.
 
 # now get colour temp, floats are the mean wavelengths
 # for the WISE W1 and W2 bands
@@ -54,7 +54,9 @@ for i in range(len(t['MJD'])):
 w1w2temp = np.array(w1w2temp)
 w1w2temp_hi = np.array(w1w2temp_hi)
 w1w2temp_lo = np.array(w1w2temp_lo)
-
+print(w1w2temp_hi)
+print(w1w2temp_lo)
+w1w2temp_hi[-1] = 0.
 w1w2temp_err = (w1w2temp_hi-w1w2temp_lo)/2
 w1w2temp[ok] = 0
 w1w2temp_err[ok] = 0

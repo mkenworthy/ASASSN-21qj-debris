@@ -5,7 +5,8 @@ from astropy.table import unique,vstack,Table
 import paths
 
 
-t = ascii.read(paths.data / 'neowise/ASASSN-21qj_2013-2021.tbl')
+##t = ascii.read(paths.data / 'neowise/ASASSN-21qj_2013-2021.tbl')
+t = ascii.read(paths.data / 'neowise/ASASSN-21qj_2013-2022.tbl')
 
 fig, ax = plt.subplots(2,1,figsize=(8,5),sharex=True)
 ax[0].errorbar(t['mjd'],t['w1mpro'],yerr=t['w1sigmpro'],fmt='.')
@@ -34,9 +35,10 @@ ax[1].set_ylim(12,10.5)
 
 t_s = 56787
 t_e = 59532
+t_e = 59600+300
 
 # number of separate epochs
-nmag = 16
+nmag = 18
 
 wt = np.zeros(nmag)
 w1 = np.zeros(nmag)
@@ -46,7 +48,7 @@ wcolsig = np.zeros(nmag)
 w1sig = np.zeros(nmag)
 w2sig = np.zeros(nmag)
 
-for (j,i) in enumerate(np.linspace(t_s, t_e, 16)):
+for (j,i) in enumerate(np.linspace(t_s, t_e, nmag)):
 #    ax[0].scatter(i-60,11.4)
 #    ax[0].scatter(i+60,11.4)
 #    ax[1].scatter(i-60,11.4)

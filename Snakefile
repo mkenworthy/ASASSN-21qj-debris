@@ -18,7 +18,7 @@ rule proc_asassn:
         "src/scripts/convert_asassn.py"
 rule proc_neowise:
      input:
-        "src/data/neowise/ASASSN-21qj_2013-2021.tbl"
+        "src/data/neowise/ASASSN-21qj_2013-2022.tbl"
      output:
         "src/data/obs_NEOWISE.ecsv"
      conda:
