@@ -1,5 +1,7 @@
 import numpy as np
 
+tiny = 1e-99
+
 def bnu_wav_micron(wav_um,temp):
     """Return a Planck function, avoiding overflows.
     
@@ -16,7 +18,7 @@ def bnu_wav_micron(wav_um,temp):
     fact2 = k2/(wav_um*temp)
     if isinstance(wav_um,np.ndarray):
         ofl = fact2 < 709
-        bnu = np.zeros(len(fact2)) + cfg.tiny
+        bnu = np.zeros(len(fact2)) + tiny
         if np.any(ofl) == False:
             return bnu
         else:
@@ -24,7 +26,7 @@ def bnu_wav_micron(wav_um,temp):
             return bnu
     elif isinstance(temp,np.ndarray):
         ofl = fact2 < 709
-        bnu = np.zeros(len(fact2)) + cfg.tiny
+        bnu = np.zeros(len(fact2)) + tiny
         if np.any(ofl) == False:
             return bnu
         else:
@@ -32,7 +34,7 @@ def bnu_wav_micron(wav_um,temp):
             return bnu
     else:
         if fact2 > 709:
-            return cfg.tiny
+            return tiny
         else:
             return fact1/(np.exp(fact2)-1.0)
 
