@@ -465,15 +465,15 @@ The spectrum shows the absorption features of a typical early G-type star, and a
 
 \subsection{ALMA}
 
-The ALMA data were downloaded and processed through to a measurement set with CASA \citep{2007ASPC..376..127M}.
+The ALMA data from programme \texttt{2019.A.00040.S} were downloaded and processed through to a measurement set with CASA \citep{2007ASPC..376..127M}. These observations used band 7, with a mean wavelength of 880\,$\mu$m.
 %
 No source is visible in the default archive products, and we also detect no source at the expected location in CLEAN images.
 %
-We measure a source flux of $XXXX \pm YYYY$\,mJy, equivalent to an upper limit of $ZZZZ$\,mJy.
+The archive products report an RMS of 17\,$\mu$Jy, and we measure an RMS of $20$\,mJy in a naturally weighted image. We therefore consider these results as an upper limit of $60$\,mJy.
 %
 In terms of the infrared excess visible in the mid-IR with WISE this upper limit is not at all constraining, but does set limits on emission from cooler dust.
 %
-These limits are not particularly constraining either, with $L_{\rm dust}/L_\star \gtrsim 10^{-3}$ at $\sim$100\,K detectable (which for context is approximately the level seen for the very bright debris disk around $\beta$~Pictoris).
+These limits are however not particularly constraining for cool dust either, with $L_{\rm dust}/L_\star \gtrsim 10^{-3}$ at $\sim$100\,K detectable. For context this level is approximately the level seen for the very bright debris disk around the young A-type star $\beta$~Pictoris.
 
 \section{Analysis}\label{sec:dustcloud}
 
@@ -567,7 +567,7 @@ We first consider some scenario independent constraints, as these illustrate som
 %
 Most simply, the IR photometry requires very warm dust, but the delay between the IR flux increase and the optical dimming suggests material that is far from the star.
 %
-While there are other means for stellar luminosity to heat dust, the star is the most conventional source, and requires the dust to be at about 0.1\,au.
+While there are other means than stellar luminosity to heat dust, the star is the most conventional source, and requires the dust to be at about 0.1\,au given the near-constant temperature of $\sim$1000\,K (Fig XXX). A blackbody at this temperature that fits the WISE fluxes implies a dust luminosity of 0.03\,$L_\star$; that is, assuming blackbody-like absorption and emission 0.03 of the stellar emission is absorbed and re-emitted by the dust.
 %
 A several-year delay between the IR flux increase and the optical transit, however, implies that the material is on an orbit with a period of at least several years, and hence several au.
 %
@@ -594,27 +594,28 @@ Possible explanations therefore attempt to avoid these restrictions.
     %
     The vertical solid line shows an upper radial limit based on the optical light curve gradients.}
     \label{fig:constr}
+    \script{fvsr.py}
 \end{figure}
 
-This increase occurred between MJD \variable{output/t_before.txt} and MJD \variable{output/t_after.txt} dates, a period of approximately \variable{output/t_duration.txt} days.
+% This increase occurred between MJD \variable{output/t_before.txt} and MJD \variable{output/t_after.txt} dates, a period of approximately \variable{output/t_duration.txt} days.
 %
-Subsequent NEOWISE measurements show an approximately constant excess flux for XXXX days, followed by a decrease from XXXX to XXX.
+% Subsequent NEOWISE measurements show an approximately constant excess flux for XXXX days, followed by a decrease from XXXX to XXX.
 
-We fit a blackbody SED to the excess flux in the two NEOWISE bands for each of the epochs.
+% We fit a blackbody SED to the excess flux in the two NEOWISE bands for each of the epochs.
 %
-Assuming grey emission (where $\upsilon(\lambda)\approx \upsilon$) we obtain an effective temperature of $_{IR} = 1000\pm XXX$K, and $F_{IR}/F_{star}=0.03$.
+% Assuming grey emission (where $\upsilon(\lambda)\approx \upsilon$) we obtain an effective temperature of $_{IR} = 1000\pm XXX$K, and $F_{IR}/F_{star}=0.03$.
 %
-Given the near-Solar luminosity of the star, this temperature implies a distance of approximately 0.1\,au if the material absorbs and emits as a blackbody, and of order a few times more distant if it is micron-sized dust (e.g. Pawellek). 
+% Given the near-Solar luminosity of the star, this temperature implies a distance of approximately 0.1\,au if the material absorbs and emits as a blackbody, and of order a few times more distant if it is micron-sized dust (e.g. Pawellek). 
 %
-The sudden onset of the IR flux within 155.21 days followed by a constant level of flux implies that the dust cloud reaches a (quasi) steady state within 6 months, though could be optically thick or thin.
+% The sudden onset of the IR flux within 155.21 days followed by a constant level of flux implies that the dust cloud reaches a (quasi) steady state within 6 months, though could be optically thick or thin.
 %
-Regardless, the dust distribution has had to expand such that 0.03 of the solid angle around the star was subtended by dust and re-radiated in the IR.
+% Regardless, the dust distribution has had to expand such that 0.03 of the solid angle around the star was subtended by dust and re-radiated in the IR.
 %
-An estimate for the surface area $A_{IR}$ of the dust can be estimated from $A_{IR}/(4\pi r_{IR}^2) = 0.03$ which leads to:
+% An estimate for the surface area $A_{IR}$ of the dust can be estimated from $A_{IR}/(4\pi r_{IR}^2) = 0.03$ which leads to:
 
-$$A_{IR}=0.38 r_{IR}^2$$ 
+% $$A_{IR}=0.38 r_{IR}^2$$ 
 
-where $r_{IR}$ is the distance of the dust from the star.
+% where $r_{IR}$ is the distance of the dust from the star.
 
 %%Hansen collision of terrestrial planet with scattered moon \citep{2022MNRAS.tmp.2636H}
 
@@ -654,7 +655,7 @@ For example, for material at 0.1\,au the orbital period is a few weeks.
 %
 While we may still invoke some singular event to explain the increase in IR flux, e.g. a collision, the new material will rapidly shear azimuthally into a disk, and the optical dimming must then be explained by variation over multiple orbital timescales.
 
-The lack of significant variation in the WISE flux after the increase suggests that this shearing has largely happened within a period of six months.
+The lack of significant variation in the WISE flux for several years after the increase suggests that this shearing has largely happened within a period of six months.
 %
 A longer timescale should lead to behaviour that is similar to that seen for stars such as ID8 \citep{2014Sci...345.1032M}, while the material is still shearing and has significant azimuthal variation.
 %
@@ -674,15 +675,15 @@ Over time however, the increase in scale height begins to block the star, leadin
 %
 The depth of the optical dimming implies that the disk was initially radially optically thick.
 %
-The radial optical depth must now be decreasing, presumably due to ongoing collisional depletion, to explain the slow increase in optical flux.
+The radial optical depth must now be decreasing and be close to optically thin at both optical and near-IR wavelengths, presumably due to ongoing collisional depletion, to explain the slow return to pre-impact levels.
 %
 The key difference for this model is that there is not a discrete cloud of debris slowly passing in front of the star, and that the star's return to normal flux is instead related to collisional depletion.
 %
-However, as the optical flux returns to normal, the IR excess should be decreasing in a similar way, because both depend on the radial optical depth of the disk.
+% However, as the optical flux returns to normal, the IR excess should be decreasing in a similar way, because both depend on the radial optical depth of the disk.
 %
-The decrease in IR flux should be somewhat delayed because the dust column that contributes to the IR excess also includes material on the far side of the star.
+% The decrease in IR flux should be somewhat delayed because the dust column that contributes to the IR excess also includes material on the far side of the star.
 %
-There is currently insufficient WISE data to rule this model out, e.g. if the star returns to normal optical flux with little change in the IR excess, but this question should be resolved on a timescale of a few years.
+% There is currently insufficient WISE data to rule this model out, e.g. if the star returns to normal optical flux with little change in the IR excess, but this question should be resolved on a timescale of a few years.
 
 As above, this model has problems.
 %
@@ -692,9 +693,7 @@ This issue is circumvented by asserting that the structures are sufficiently lar
 %
 There may also be a problem with the strong variation in the optical light curves; a disk that has undergone significant collisional evolution should have reached a quasi-steady state, where objects of all sizes from the largest bodies to smallest dust grains are all colliding on their respective timescales, which should mean that clumpy structure related to individual parent bodies has largely been erased.
 %
-The geometry of the disk in this scenario may also be fine tuned, in that a radially optically thick disk may also block IR emission from the inner disk, thus requiring that the disk be optically thick at optical wavelengths, but not IR wavelengths.
-%
-A few more years of data should help provide some guidance on this interpretation, and perhaps motivate radiative transfer models.
+The geometry of the disk in this scenario may also be fine tuned, in that a radially optically thick disk may also block IR emission from the inner disk, which is incompatible with the warm emission. This problem can however be avoided if the disk is optically thick enough to block the star at optical wavelengths, but remains reasonably optically thin at near-IR wavelengths.
 
 \subsection{HYP 3: dust heated by synestia/collision} 
 
