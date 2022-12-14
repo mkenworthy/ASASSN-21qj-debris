@@ -24,6 +24,15 @@
 
 \usepackage{xspace}
 
+%\newcommand{\todo2}[1]{{\colorbox{yellow}{\color{red}[TODO]:#1}}}
+\newcommand{\todo}[1]{
+\colorbox{yellow}{
+\begin{minipage}{0.8\linewidth}
+\color{red}
+TODO: #1
+\end{minipage}
+}}
+
 \newcommand{\asas}{ASASSN-21qj}
 \newcommand{\ktwo}{\textit{K2}}
 \newcommand{\kms}{km~s$^{-1}$\xspace}
@@ -164,7 +173,7 @@ The Earth's moon is believed to have formed from the resulting aftermath of a co
 %
 Sudden increases of infrared flux from systems known to host debris disks indicate that this is a stochastic process that can occur on timescales of a few months or less.
 %
-Models of these impacts and the subsequent evolution of the dust clouds have been modeled \citep{Jackson12,Jackson14} and have been seen ar IR wavelengths \citep{Su19,Su22}.
+Models of these impacts and the subsequent evolution of the dust clouds have been modeled \citep{Jackson12,Jackson14} and have been seen at IR wavelengths \citep{Su19,Su22}.
 
 The star 2MASS J08152329-3859234 underwent a sudden dimming event in December 2021, which was announced by \citet{RizzoSmith21} and assigned the identifier \asas, which we will subsequently use for the rest of this paper.
 %
@@ -408,7 +417,7 @@ Lower panel: The periodogram of the star outside of the eclipse over a range of 
 \script{calc_stellar_lomb_scargle.py}
 \end{centering}
 \end{figure*}
-
+    
 The Near-Earth Object Wide-field Infrared Survey Explorer (NEOWISE) is a space-based infrared telescope that has been surveying the sky since 2013 at $3.4$ and $4.6~\mu$m.
 %
 NEOWISE orbits near the Earth's day-night terminator, scanning rings of the sky near $\sim90^\circ$ Solar elongation, and obtains a sequence of observations of a given region of sky every six months.
@@ -465,6 +474,8 @@ The spectrum shows the absorption features of a typical early G-type star, and a
 
 \subsection{ALMA}
 
+ADD OBS DATE
+
 The ALMA data from programme \texttt{2019.A.00040.S} were downloaded and processed through to a measurement set with CASA \citep{2007ASPC..376..127M}. These observations used band 7, with a mean wavelength of 880\,$\mu$m.
 %
 No source is visible in the default archive products, and we also detect no source at the expected location in CLEAN images.
@@ -491,7 +502,7 @@ The sampling of the photometry enables determination of the reddening as a funct
 %
 The reddening is calculated in 20 day bins and plotted in Figure ZZZZ, showing that the reddening angle is very consistent over the duration of the eclipse, but that there is a suggestion that the reddening angle changes gradually during the ingress and egress.
 
-TODO: to estimate the minimum mass of all the sub-micron dust in the eclipse and equate that to YYYYY kg of solid material.
+\todo{to estimate the minimum mass of all the sub-micron dust in the eclipse and equate that to YYYYY kg of solid material.}
 
 \subsection{Transverse velocity of the dust cloud}
 
@@ -567,7 +578,7 @@ We first consider some scenario independent constraints, as these illustrate som
 %
 Most simply, the IR photometry requires very warm dust, but the delay between the IR flux increase and the optical dimming suggests material that is far from the star.
 %
-While there are other means than stellar luminosity to heat dust, the star is the most conventional source, and requires the dust to be at about 0.1\,au given the near-constant temperature of $\sim$1000\,K (Fig XXX). A blackbody at this temperature that fits the WISE fluxes implies a dust luminosity of 0.03\,$L_\star$; that is, assuming blackbody-like absorption and emission 0.03 of the stellar emission is absorbed and re-emitted by the dust.
+While there are other means than stellar luminosity to heat dust, the star is the most conventional source, and requires the dust to be at about 0.1\,au given the near-constant temperature of $\sim$1000\,K (Fig XXX). A blackbody at this temperature that fits the WISE fluxes implies a dust luminosity of 0.034\,$L_\star$; that is, assuming blackbody-like absorption and emission 0.034 of the stellar emission is absorbed and re-emitted by the dust. For a dust temperature of 1000\,K, the emitting area is 0.01\,au$^2$, equivalent to an object about 7\,$R_\odot$ in radius.
 %
 A several-year delay between the IR flux increase and the optical transit, however, implies that the material is on an orbit with a period of at least several years, and hence several au.
 %
@@ -582,9 +593,9 @@ Possible explanations therefore attempt to avoid these restrictions.
 \begin{figure}
     \centering
     \includegraphics[width=0.5\textwidth]{figures/fvsr.pdf}
-    \caption{Model-independent constraints in terms of dust fractional luminosity ($L_{\rm dust}/L_\star$) and stellocentric radius.
+    \caption{Model-independent constraints in terms of dust fractional luminosity ($L_{\rm dust}/L_\star$) and stellocentric radius or temperature.
     %
-    The dot shows the location of the dust from an SED fit, and the curved line shows cooler dust that is consistent with the WISE W2 flux alone.
+    The dot shows the location of the dust from an SED fit, and the curved line shows cooler dust that is consistent with the WISE W2 flux alone. The grey line shows what could have been detected with WISE; with detectable emission at a given radius/temperature lying above the grey line.
     %
     The diagonal line shows the upper limit from the ALMA non-detection.
     %
