@@ -9,10 +9,10 @@ overleaf:
     - src/tex/bib.bib
 
 datasets:
-  10.5072/zenodo.1128958:
+  10.5072/zenodo.1131334:
     contents:
       aavsodata_636cdb53c895b.txt: src/data/aavso/aavsodata_636cdb53c895b.txt
-      ASASSN-21qj_2013-2021.tbl: src/data/neowise/ASASSN-21qj_2013-2021.tbl
+      ASASSN-21qj_2013-2022.tbl: src/data/neowise/ASASSN-21qj_2013-2022.tbl
       job211831.txt: src/data/atlas/job211831.txt
       light_curve_a4748464-dd11-4557-ae7f-6c50774aa532.csv: src/data/asassn/light_curve_a4748464-dd11-4557-ae7f-6c50774aa532.csv
       Misc_Atlas.cyan.dat: src/data/filter_curves/Misc_Atlas.cyan.dat
@@ -53,7 +53,7 @@ dependencies:
     src/scripts/convert_asassn.py:
         - src/data/asassn/light_curve_a4748464-dd11-4557-ae7f-6c50774aa532.csv
     src/scripts/convert_neowise.py:
-        - src/data/neowise/ASASSN-21qj_2013-2021.tbl
+        - src/data/neowise/ASASSN-21qj_2013-2022.tbl
     src/scripts/convert_aavso.py:
         - src/data/aavso/aavsodata_636cdb53c895b.txt
     src/scripts/plot_2spot_spectrum.py:
