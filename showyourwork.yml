@@ -9,7 +9,7 @@ overleaf:
     - src/tex/bib.bib
 
 datasets:
-  10.5072/zenodo.1131334:
+  10.5072/zenodo.1137539:
     contents:
       aavsodata_636cdb53c895b.txt: src/data/aavso/aavsodata_636cdb53c895b.txt
       ASASSN-21qj_2013-2022.tbl: src/data/neowise/ASASSN-21qj_2013-2022.tbl
@@ -24,7 +24,18 @@ datasets:
       Misc_Atlas.orange.dat: src/data/filter_curves/Misc_Atlas.orange.dat
       Bessel_I-1.txt: src/data/filter_curves/Bessel_I-1.txt
       asassn-21qj_20220907_358_2SPOT.fits: src/data/2spot/asassn-21qj_20220907_358_2SPOT.fits
+      neowise_rvc.csv: src/data/rvc_data/neowise.csv
+      aavso_rvc.txt: src/data/rvc_data/aavso.txt
+      asassn_rvc.csv: src/data/rvc_data/asassn.csv
+      atlas_reduced_rvc.txt: src/data/rvc_data/atlas_reduced.txt
+      lcogt_rvc.fits: src/data/rvc_data/lcogt.fits
 dependencies:
+    src/scripts/plot_master_lightcurve.py:
+        - src/data/rvc_data/neowise.csv
+        - src/data/rvc_data/aavso.txt
+        - src/data/rvc_data/asassn.csv
+        - src/data/rvc_data/atlas_reduced.txt
+        - src/data/rvc_data/lcogt.fits
     src/scripts/plot_all_photometry.py:
         - src/data/obs_ATLAS.ecsv
         - src/data/obs_ASASSN.ecsv

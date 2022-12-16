@@ -12,7 +12,7 @@
 # The eclipse of ASASSN-21qj
 
 M. Kenworthy, E.E. Mamajek, G.M. Kennedy, A. Sainio, NEOWISE collaboration, other authors...
-<img width="1338" alt="lc_and_field" src="https://user-images.githubusercontent.com/1846189/184602067-21154677-5c49-4c6c-8bcf-cd501f9d4093.png">
+<img width="1338" alt="Light curve" src="three_color.jpg">
 
 The otherwise unremarkable G type star ASASSN-21qj (T=5900 K) started undergoing a complex eclipse in 2021, announced in [Rizzo Smith+ (2021)](https://www.astronomerstelegram.org/?read=14879) which has been followed with photometric monitoring in the optical by several observatories. The photometry suggests sub-micron sized dust is responsible for the eclipse, which has a duration of at least 500 days. This paper suggests a hypothesis for the generation of the dust and its subsequent evolution with time.
 
